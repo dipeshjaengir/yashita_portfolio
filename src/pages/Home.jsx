@@ -33,7 +33,7 @@ export default function Home({ setCurrentPage }) {
             marginBottom: 'var(--space-sm)',
             fontWeight: 400
           }}>
-            Evara by Yashi
+            Yashita Dedhia
           </p>
           <h1 style={{ marginBottom: 'var(--space-md)' }}>
             Where Creativity <br />

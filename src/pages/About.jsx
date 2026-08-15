@@ -25,42 +25,42 @@ export default function About({ scrollToSection, setScrollToSection }) {
     {
       year: "Childhood",
       title: "Where It All Began",
-      desc: "Art has been part of my life since childhood. From playgroup through 10th standard, I participated in drawing and painting competitions, winning medals, trophies, and certificates."
+      desc: "Art has been part of my life since childhood, from school competitions to winning medals, trophies, and certificates."
     },
     {
       year: "2016",
       title: "My First Step as an Art Teacher",
-      desc: "While preparing for my 10th board examinations, I taught my first drawing class to a group of young children, discovering that art could become more than a hobby."
+      desc: "While preparing for my 10th boards, I taught my first drawing class, discovering that art could become more than a hobby."
     },
     {
       year: "2017 – 2019",
       title: "Nurturing My Passion",
-      desc: "After 10th, I chose Commerce while continuing to pursue art and design. Alongside my studies, I conducted drawing classes for two years, deepening my practice while sharing my skills with others."
+      desc: "While studying Commerce, I continued conducting drawing classes for two years and deepened my passion for art and design."
     },
     {
       year: "2019 – 2023",
       title: "National Institute of Fashion Technology",
-      desc: "At NIFT Hyderabad, I pursued Textile Design and explored digital prints, fabrics, colours, textures, surface techniques, and the relationship between art and design."
+      desc: "At NIFT Hyderabad, I explored textile design through fabrics, colours, textures, prints, and surface techniques."
     },
     {
       year: "2023",
       title: "From Fashion to Art",
-      desc: "After graduating, I began working in fashion while continuing to explore my identity as an artist. Creating my first wall painting opened the door to commissioned artwork and new creative opportunities."
+      desc: "After graduating, I entered the fashion industry while creating my first wall painting, opening the door to commissioned artwork."
     },
     {
       year: "2023 – 2025",
       title: "Finding My Artistic Voice",
-      desc: "What began with one wall painting grew into commissioned murals, customized canvases, fabric painting, and other creative projects, helping me experiment with new techniques and discover my artistic voice."
+      desc: "One wall painting grew into murals, customized canvases, fabric painting, and creative projects that shaped my artistic voice."
     },
     {
       year: "2026",
       title: "Choosing Art, Full-Time",
-      desc: "After three years in the fashion industry, I left my job to pursue art full-time. I conducted my first summer art camp and independent workshop, returning to teaching while creating spaces for others to explore their creativity."
+      desc: "After three years in fashion, I left my job to pursue art full-time, conducting my first art camp and independent workshop."
     },
     {
       year: "Present",
       title: "Exploring. Creating. Becoming.",
-      desc: "Today, I continue exploring mediums and techniques through murals, commissioned artworks, workshops, and teaching — growing as an artist and building a life around the creativity that began in childhood.",
+      desc: "Today, I explore new mediums through murals, commissioned artworks, workshops, and teaching as I continue growing as an artist.",
       isPresent: true
     }
   ];
@@ -89,7 +89,7 @@ export default function About({ scrollToSection, setScrollToSection }) {
                 </div>
               </div>
               <div className="about-portrait-caption">
-                Yashita Dedhia &mdash; Textile Designer &amp; Fine Artist
+                Yashita Dedhia &mdash; Fine Artist &amp; Textile Designer
               </div>
             </div>
           </div>
