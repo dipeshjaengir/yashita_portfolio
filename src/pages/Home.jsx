@@ -23,12 +23,20 @@ export default function Home({ setCurrentPage }) {
     <div className="home-page-wrapper">
       {/* 1. Immersive Full-Screen Hero */}
       <section className="home-hero-fullscreen">
-        <img 
-          src="/yashita-easel.jpg" 
-          alt="Yashita Dedhia with easel artwork" 
-          className="hero-bg-img"
-          loading="eager"
-        />
+        <div className="hero-bg-container">
+          <img 
+            src="/yashita-easel.jpg" 
+            alt="Yashita Dedhia with easel artwork - blurred background" 
+            className="hero-bg-blur"
+            loading="eager"
+          />
+          <img 
+            src="/yashita-easel.jpg" 
+            alt="Yashita Dedhia with easel artwork - clear foreground" 
+            className="hero-bg-clear"
+            loading="eager"
+          />
+        </div>
         <div className="hero-dark-overlay"></div>
         <div className="container hero-content-container">
           <div className="hero-centered-content">
