@@ -224,45 +224,15 @@ export default function Works({ setCurrentPage }) {
 
       {/* Lightbox / Details Modal */}
       {activeArtwork && (
-        <div style={{
-          position: 'fixed',
-          top: 0,
-          left: 0,
-          right: 0,
-          bottom: 0,
-          backgroundColor: 'rgba(244, 243, 241, 0.95)', // Mist color backdrop
-          zIndex: 1000,
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          padding: 'var(--space-md)'
-        }}
-        onClick={() => setActiveArtwork(null)}
-        >
-          <div style={{
-            backgroundColor: 'var(--color-mist)',
-            border: '1px solid var(--color-border)',
-            width: '100%',
-            maxWidth: '900px',
-            position: 'relative',
-            maxHeight: '90vh',
-            overflowY: 'auto'
-          }}
-          onClick={e => e.stopPropagation()} // Stop closing on inner click
-          >
+        <div className="modal-overlay" onClick={() => setActiveArtwork(null)}>
+          <div className="modal-card" onClick={e => e.stopPropagation()}>
             {/* Close Button */}
             <button 
+              className="modal-close-btn"
               onClick={() => setActiveArtwork(null)}
-              style={{
-                position: 'absolute',
-                top: '15px',
-                right: '15px',
-                zIndex: 10,
-                color: 'var(--color-sage-dark)'
-              }}
               aria-label="Close details"
             >
-              <X size={24} />
+              <X size={20} />
             </button>
 
             {/* Modal Body */}
@@ -276,12 +246,7 @@ export default function Works({ setCurrentPage }) {
                       <img 
                         src={activeArtwork.images[activeImageIndex]} 
                         alt={`${activeArtwork.title} - View ${activeImageIndex + 1}`}
-                        style={{
-                          maxWidth: '100%',
-                          maxHeight: '400px',
-                          objectFit: 'contain',
-                          border: '1px solid var(--color-border)'
-                        }}
+                        className="main-art-img"
                       />
                       
                       {activeArtwork.images.length > 1 && (
@@ -390,24 +355,36 @@ export default function Works({ setCurrentPage }) {
                   <div style={{ height: '1px', backgroundColor: 'var(--color-border)', margin: 'var(--space-sm) 0' }}></div>
                   
                   {/* Factual documentation ready states */}
-                  {(activeArtwork.medium || activeArtwork.size || activeArtwork.price) && (
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: 'var(--space-md)' }}>
+                  {(activeArtwork.medium || activeArtwork.size || activeArtwork.price || activeArtwork.year || activeArtwork.location) && (
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.65rem', margin: 'var(--space-md) 0' }}>
                       {activeArtwork.medium && (
-                        <div style={{ fontSize: '0.9rem' }}>
-                          <span style={{ color: 'var(--color-sage-dark)', fontWeight: 500 }}>Medium: </span>
-                          {activeArtwork.medium}
+                        <div style={{ fontSize: '0.95rem' }}>
+                          <span style={{ color: 'var(--color-sage-dark)', fontWeight: 600 }}>Medium: </span>
+                          <span style={{ color: 'var(--color-charcoal)' }}>{activeArtwork.medium}</span>
                         </div>
                       )}
                       {activeArtwork.size && (
-                        <div style={{ fontSize: '0.9rem' }}>
-                          <span style={{ color: 'var(--color-sage-dark)', fontWeight: 500 }}>Dimensions: </span>
-                          {activeArtwork.size}
+                        <div style={{ fontSize: '0.95rem' }}>
+                          <span style={{ color: 'var(--color-sage-dark)', fontWeight: 600 }}>Dimensions: </span>
+                          <span style={{ color: 'var(--color-charcoal)' }}>{activeArtwork.size}</span>
                         </div>
                       )}
                       {activeArtwork.price && (
-                        <div style={{ fontSize: '0.9rem' }}>
-                          <span style={{ color: 'var(--color-sage-dark)', fontWeight: 500 }}>Availability: </span>
-                          {activeArtwork.price}
+                        <div style={{ fontSize: '0.95rem' }}>
+                          <span style={{ color: 'var(--color-sage-dark)', fontWeight: 600 }}>Availability: </span>
+                          <span style={{ color: 'var(--color-charcoal)' }}>{activeArtwork.price}</span>
+                        </div>
+                      )}
+                      {activeArtwork.year && (
+                        <div style={{ fontSize: '0.95rem' }}>
+                          <span style={{ color: 'var(--color-sage-dark)', fontWeight: 600 }}>Year: </span>
+                          <span style={{ color: 'var(--color-charcoal)' }}>{activeArtwork.year}</span>
+                        </div>
+                      )}
+                      {activeArtwork.location && (
+                        <div style={{ fontSize: '0.95rem' }}>
+                          <span style={{ color: 'var(--color-sage-dark)', fontWeight: 600 }}>Location: </span>
+                          <span style={{ color: 'var(--color-charcoal)' }}>{activeArtwork.location}</span>
                         </div>
                       )}
                     </div>
