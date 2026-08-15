@@ -10,6 +10,51 @@ const INITIAL_ARTWORKS = [
   {
     id: 1,
     category: "Mural Art",
+    title: "The Cosmic Mandala — Journey Within",
+    images: [
+      "/mural-cosmic-mandala-1.jpg",
+      "/mural-cosmic-mandala-2.jpg",
+      "/mural-cosmic-mandala-3.jpg"
+    ],
+    size: "7sqft x 4sqft",
+    price: null,
+    medium: null,
+    description: "A contemporary Lippan-inspired mandala representing seven chakras and the journey from the outer world to inner consciousness.",
+    imageRatio: "portrait"
+  },
+  {
+    id: 2,
+    category: "Mural Art",
+    title: "A Fusion of Pichwai & Lippan",
+    images: [
+      "/mural-fusion-pichwai-lippan-1.jpg",
+      "/mural-fusion-pichwai-lippan-2.jpg"
+    ],
+    size: "6sqft x 4sqft",
+    price: null,
+    medium: null,
+    description: "A contemporary interpretation of the Tree of Life, blending the devotional richness of Pichwai art with the intricate mirror work of Lippan art.",
+    imageRatio: "portrait"
+  },
+  {
+    id: 3,
+    category: "Mural Art",
+    title: "Geometry in bloom",
+    images: [
+      "/mural-geometry-in-bloom-1.jpg",
+      "/mural-geometry-in-bloom-2.jpg",
+      "/mural-geometry-in-bloom-3.jpg",
+      "/mural-geometry-in-bloom-4.jpg"
+    ],
+    size: "6sqft x 4sqft",
+    price: null,
+    medium: null,
+    description: "A contemporary mural merging organic botanical elements with bold geometric forms in a harmonious composition.",
+    imageRatio: "portrait"
+  },
+  {
+    id: 4,
+    category: "Mural Art",
     title: "Botanical Geometry",
     images: [
       "/mural-botanical-geometry-1.jpg",
@@ -23,7 +68,36 @@ const INITIAL_ARTWORKS = [
     imageRatio: "portrait"
   },
   {
-    id: 2,
+    id: 5,
+    category: "Mural Art",
+    title: "Windows of Wonder",
+    images: [
+      "/mural-windows-of-wonder-1.jpg",
+      "/mural-windows-of-wonder-2.jpg",
+      "/mural-windows-of-wonder-3.jpg",
+      "/mural-windows-of-wonder-4.jpg"
+    ],
+    size: "5sqft x 4sqft",
+    price: null,
+    medium: null,
+    description: "A vibrant triptych mural blending nature, landscapes, and abstract forms into three colorful visual stories.",
+    imageRatio: "portrait"
+  },
+  {
+    id: 6,
+    category: "Mural Art",
+    title: "Udipi’s Upahar – Wall Mural",
+    images: [
+      "/mural-udipis-upahar-1.jpg"
+    ],
+    size: "8sqft x 6sqft",
+    price: null,
+    medium: null,
+    description: "A vibrant mural celebrating the rich culture and traditional charm of South India. Designed to bring a warm, authentic touch to the restaurant’s ambience.",
+    imageRatio: "landscape"
+  },
+  {
+    id: 7,
     category: "Canvas Painting",
     title: "Canvas Painting",
     size: null,
@@ -33,27 +107,7 @@ const INITIAL_ARTWORKS = [
     imageRatio: "portrait"
   },
   {
-    id: 3,
-    category: "Custom Artwork",
-    title: "Custom Artwork",
-    size: null,
-    price: null,
-    medium: null,
-    description: null,
-    imageRatio: "square"
-  },
-  {
-    id: 4,
-    category: "Mural Art",
-    title: "Mural Artist",
-    size: null,
-    price: null,
-    medium: null,
-    description: null,
-    imageRatio: "portrait"
-  },
-  {
-    id: 5,
+    id: 8,
     category: "Canvas Painting",
     title: "Canvas Painting",
     size: null,
@@ -63,7 +117,17 @@ const INITIAL_ARTWORKS = [
     imageRatio: "landscape"
   },
   {
-    id: 6,
+    id: 9,
+    category: "Custom Artwork",
+    title: "Custom Artwork",
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "square"
+  },
+  {
+    id: 10,
     category: "Custom Artwork",
     title: "Custom Artwork",
     size: null,
@@ -202,19 +266,9 @@ export default function Works({ setCurrentPage }) {
             </button>
 
             {/* Modal Body */}
-            <div className="grid-two-col" style={{ gap: 0, alignItems: 'stretch' }}>
+            <div className="modal-grid">
               {/* Image Column */}
-              <div style={{ 
-                padding: 'var(--space-md)', 
-                display: 'flex', 
-                flexDirection: 'column',
-                alignItems: 'center', 
-                justifyContent: 'center',
-                backgroundColor: 'var(--color-mist-light)', 
-                position: 'relative',
-                minHeight: '350px',
-                flexGrow: 1
-              }}>
+              <div className="modal-image-col">
                 {activeArtwork.images && activeArtwork.images.length > 0 ? (
                   <div style={{ width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 'var(--space-sm)' }}>
                     {/* Main Image Display */}
@@ -325,13 +379,7 @@ export default function Works({ setCurrentPage }) {
               </div>
 
               {/* Information Column */}
-              <div style={{ 
-                padding: 'var(--space-lg) var(--space-md)',
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'space-between',
-                borderLeft: '1px solid var(--color-border)'
-              }}>
+              <div className="modal-info-col">
                 <div>
                   <span className="script-accent" style={{ fontSize: '1.25rem', marginBottom: '0.25rem', color: 'var(--color-mauve)' }}>
                     {activeArtwork.category}
@@ -342,27 +390,37 @@ export default function Works({ setCurrentPage }) {
                   <div style={{ height: '1px', backgroundColor: 'var(--color-border)', margin: 'var(--space-sm) 0' }}></div>
                   
                   {/* Factual documentation ready states */}
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: 'var(--space-md)' }}>
-                    <div style={{ fontSize: '0.9rem' }}>
-                      <span style={{ color: 'var(--color-sage)', fontWeight: 500 }}>Medium: </span>
-                      {activeArtwork.medium ? activeArtwork.medium : <span style={{ fontStyle: 'italic', opacity: 0.65 }}>Information to be provided</span>}
+                  {(activeArtwork.medium || activeArtwork.size || activeArtwork.price) && (
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: 'var(--space-md)' }}>
+                      {activeArtwork.medium && (
+                        <div style={{ fontSize: '0.9rem' }}>
+                          <span style={{ color: 'var(--color-sage-dark)', fontWeight: 500 }}>Medium: </span>
+                          {activeArtwork.medium}
+                        </div>
+                      )}
+                      {activeArtwork.size && (
+                        <div style={{ fontSize: '0.9rem' }}>
+                          <span style={{ color: 'var(--color-sage-dark)', fontWeight: 500 }}>Dimensions: </span>
+                          {activeArtwork.size}
+                        </div>
+                      )}
+                      {activeArtwork.price && (
+                        <div style={{ fontSize: '0.9rem' }}>
+                          <span style={{ color: 'var(--color-sage-dark)', fontWeight: 500 }}>Availability: </span>
+                          {activeArtwork.price}
+                        </div>
+                      )}
                     </div>
-                    <div style={{ fontSize: '0.9rem' }}>
-                      <span style={{ color: 'var(--color-sage)', fontWeight: 500 }}>Dimensions: </span>
-                      {activeArtwork.size ? activeArtwork.size : <span style={{ fontStyle: 'italic', opacity: 0.65 }}>Information to be provided</span>}
-                    </div>
-                    <div style={{ fontSize: '0.9rem' }}>
-                      <span style={{ color: 'var(--color-sage)', fontWeight: 500 }}>Availability: </span>
-                      {activeArtwork.price ? activeArtwork.price : <span style={{ fontStyle: 'italic', opacity: 0.65 }}>Available upon request</span>}
-                    </div>
-                  </div>
+                  )}
 
-                  <p style={{ fontSize: '0.9rem', lineHeight: '1.6', color: 'var(--color-charcoal)' }}>
-                    {activeArtwork.description ? activeArtwork.description : "Official documentation, conceptual descriptions, and specific execution details for this artwork will be updated in the gallery shortly."}
-                  </p>
+                  {activeArtwork.description && (
+                    <p style={{ fontSize: '0.9rem', lineHeight: '1.6', color: 'var(--color-charcoal)' }}>
+                      {activeArtwork.description}
+                    </p>
+                  )}
                 </div>
 
-                <div style={{ marginTop: 'var(--space-md)' }}>
+                <div style={{ marginTop: 'var(--space-sm)' }}>
                   <button 
                     className="btn-primary" 
                     style={{ width: '100%' }}

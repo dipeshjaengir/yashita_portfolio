@@ -1316,3 +1316,51 @@
     font-size: 0.8rem;
   }
 }
+
+/* Artwork Detail Modal Styles */
+.modal-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+  align-items: start;
+}
+
+@media (min-width: 768px) {
+  .modal-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.modal-image-col {
+  padding: 48px var(--space-md) var(--space-md) var(--space-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-mist-light);
+  position: relative;
+  min-height: 250px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .modal-image-col {
+    padding: var(--space-md);
+    min-height: 450px;
+  }
+}
+
+.modal-info-col {
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  border-left: none;
+}
+
+@media (min-width: 768px) {
+  .modal-info-col {
+    padding: var(--space-lg) var(--space-md);
+    border-left: 1px solid var(--color-border);
+  }
+}
