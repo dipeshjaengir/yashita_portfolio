@@ -100,9 +100,20 @@ export default function About({ scrollToSection, setScrollToSection }) {
               <h2 style={{ fontSize: '1.75rem', marginBottom: 'var(--space-xs)', color: 'var(--color-sage-dark)' }}>
                 About Yashita Dedhia
               </h2>
-              <p style={{ fontSize: '1.05rem', lineHeight: '1.8', fontWeight: 300 }}>
-                "Hi, I’m Yashita Dedhia, a graduate of the National Institute of Fashion Technology, Hyderabad specializing in Textile Design. After spending three years working in the fashion industry, I gained valuable experience in exploring materials, textures, colours, and the creative process. While I enjoyed my journey in fashion, I gradually realized that my true passion has always been art. This realization inspired me to take a leap of faith and pursue my passion as a full-time artist. Today, I explore art as a way to express ideas, emotions, and perspectives, constantly experimenting with different techniques and mediums to discover my own visual language."
-              </p>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.8rem', fontSize: '1.05rem', lineHeight: '1.8', fontWeight: 300, color: 'var(--color-charcoal)' }}>
+                <p style={{ margin: 0, fontFamily: "var(--font-sans)" }}>
+                  Hi, I’m Yashita Dedhia, a graduate of the National Institute of Fashion Technology, Hyderabad, specializing in Textile Design.
+                </p>
+                <p style={{ margin: 0, fontFamily: "var(--font-sans)" }}>
+                  After spending three years working in the fashion industry, I gained valuable experience exploring materials, textures, colours, and the creative process.
+                </p>
+                <p style={{ margin: 0, fontFamily: "var(--font-sans)" }}>
+                  While I enjoyed my journey in fashion, I gradually realized that my true passion has always been art. This inspired me to take a leap of faith and pursue my passion as a full-time artist.
+                </p>
+                <p style={{ margin: 0, fontFamily: "var(--font-sans)" }}>
+                  Today, I explore art as a way to express ideas, emotions, and perspectives, constantly experimenting with different techniques and mediums to discover my own visual language.
+                </p>
+              </div>
             </div>
 
             <div style={{ 

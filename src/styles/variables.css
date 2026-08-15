@@ -1,17 +1,17 @@
 :root {
   /* Color System */
   --color-mist: #F4F3F1;
-  --color-mauve: #BE6F79;
-  --color-sage: #526447;
+  --color-mauve: #B96873;
+  --color-sage: #4F6245;
   
   /* Tint & Shade Variations for Depth */
   --color-mist-light: #FAF9F8;
-  --color-mauve-light: #D697A0;
-  --color-mauve-dark: #9A4C55;
-  --color-sage-light: #778A6B;
-  --color-sage-dark: #3B4933;
+  --color-mauve-light: #D18E97;
+  --color-mauve-dark: #944650;
+  --color-sage-light: #728766;
+  --color-sage-dark: #37482F;
   --color-charcoal: #2A2E27; /* Sophisticated deep charcoal-olive for elegant readability */
-  --color-border: rgba(82, 100, 71, 0.2); /* Transparent Dark Sage border */
+  --color-border: rgba(79, 98, 69, 0.2); /* Transparent Dark Sage border */
   
   /* Typography Families */
   --font-serif: 'Cormorant Garamond', serif;
