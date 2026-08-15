@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ArrowUpRight } from 'lucide-react';
 import PlaceholderImage from '../components/PlaceholderImage';
 
@@ -7,6 +7,14 @@ import PlaceholderImage from '../components/PlaceholderImage';
  * Incorporates brand quote, practice areas, work previews, and clear paths to other pages.
  */
 export default function Home({ setCurrentPage }) {
+  const [activeSlide, setActiveSlide] = useState(0);
+
+  const handleCarouselScroll = (e) => {
+    const scrollLeft = e.target.scrollLeft;
+    const cardWidth = e.target.scrollWidth / 3;
+    const index = Math.round(scrollLeft / cardWidth);
+    setActiveSlide(Math.min(Math.max(index, 0), 2));
+  };
   const handleNavClick = (pageId, sectionId = null) => {
     setCurrentPage(pageId, sectionId);
   };
@@ -114,33 +122,41 @@ export default function Home({ setCurrentPage }) {
           </button>
         </div>
 
-        <div style={{ 
-          display: 'grid', 
-          gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', 
-          gap: 'var(--space-md)' 
-        }}>
-          <div className="artwork-card" onClick={() => handleNavClick('works')}>
-            <PlaceholderImage aspectRatio="portrait" title="Mural Art Portfolio" subtitle="Coming Soon" />
-            <div className="artwork-info">
-              <span className="artwork-title">Mural Art commissions</span>
-              <span className="artwork-meta">Collection</span>
+        <div className="selected-work-carousel-container">
+          <div 
+            className="selected-work-carousel"
+            onScroll={handleCarouselScroll}
+          >
+            <div className="artwork-card" onClick={() => handleNavClick('works')}>
+              <PlaceholderImage aspectRatio="portrait" title="Mural Art" subtitle="Coming Soon" />
+              <div className="artwork-info">
+                <span className="artwork-title">Mural Art</span>
+                <span className="artwork-meta">Collection</span>
+              </div>
+            </div>
+
+            <div className="artwork-card" onClick={() => handleNavClick('works')}>
+              <PlaceholderImage aspectRatio="square" title="Canvas Painting" subtitle="Coming Soon" />
+              <div className="artwork-info">
+                <span className="artwork-title">Canvas Painting</span>
+                <span className="artwork-meta">Collection</span>
+              </div>
+            </div>
+
+            <div className="artwork-card" onClick={() => handleNavClick('works')}>
+              <PlaceholderImage aspectRatio="portrait" title="Custom Artwork" subtitle="Coming Soon" />
+              <div className="artwork-info">
+                <span className="artwork-title">Custom Artwork</span>
+                <span className="artwork-meta">Collection</span>
+              </div>
             </div>
           </div>
 
-          <div className="artwork-card" onClick={() => handleNavClick('works')}>
-            <PlaceholderImage aspectRatio="square" title="Canvas Painting Collection" subtitle="Coming Soon" />
-            <div className="artwork-info">
-              <span className="artwork-title">Fine Art Canvases</span>
-              <span className="artwork-meta">Collection</span>
-            </div>
-          </div>
-
-          <div className="artwork-card" onClick={() => handleNavClick('works')}>
-            <PlaceholderImage aspectRatio="portrait" title="Custom Commissions" subtitle="Coming Soon" />
-            <div className="artwork-info">
-              <span className="artwork-title">Custom Artwork</span>
-              <span className="artwork-meta">Bespoke</span>
-            </div>
+          {/* Dots Indicator for Mobile Swipe */}
+          <div className="carousel-dots">
+            <span className={`carousel-dot ${activeSlide === 0 ? 'active' : ''}`}></span>
+            <span className={`carousel-dot ${activeSlide === 1 ? 'active' : ''}`}></span>
+            <span className={`carousel-dot ${activeSlide === 2 ? 'active' : ''}`}></span>
           </div>
         </div>
       </section>

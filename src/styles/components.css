@@ -797,7 +797,7 @@
 
 .hero-portrait-wrapper {
   width: 100%;
-  max-width: 260px;
+  max-width: min(80vw, 320px);
   margin: var(--space-md) auto 0; /* Center by default on mobile/tablet */
 }
 
@@ -817,7 +817,7 @@
 
 .about-portrait-wrapper {
   width: 100%;
-  max-width: 280px;
+  max-width: min(85vw, 340px);
   margin: 0 auto var(--space-md);
 }
 
@@ -906,4 +906,75 @@
 .hero-cta-primary:hover .cta-arrow,
 .hero-cta-secondary:hover .cta-arrow {
   transform: translateX(4px);
+}
+
+/* ==========================================
+   SELECTED WORK PORTFOLIO HORIZONTAL CAROUSEL
+   ========================================== */
+.selected-work-carousel-container {
+  position: relative;
+  width: 100%;
+}
+
+.selected-work-carousel {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-md);
+}
+
+@media (max-width: 767px) {
+  .selected-work-carousel-container {
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .selected-work-carousel {
+    display: flex !important;
+    flex-direction: row !important;
+    overflow-x: auto !important;
+    scroll-snap-type: x mandatory !important;
+    scroll-behavior: smooth !important;
+    gap: 20px !important;
+    padding: 10px 10vw !important; /* Visual padding for centering snap */
+    margin: 0 -20px !important; /* Pull wide to allow scroll bounds */
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .selected-work-carousel::-webkit-scrollbar {
+    display: none;
+  }
+
+  .selected-work-carousel .artwork-card {
+    flex: 0 0 80vw !important; /* Capped at 80vw for spacing margins on sides */
+    max-width: 320px !important; /* Visual balance: ~320px wide on a 390px viewport */
+    scroll-snap-align: center !important;
+    margin: 0 !important;
+  }
+
+  /* Carousel Navigation Dots */
+  .carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: var(--space-md);
+  }
+
+  .carousel-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: rgba(130, 150, 114, 0.25); /* Muted Sage dot */
+    transition: background-color var(--transition-fast);
+  }
+
+  .carousel-dot.active {
+    background-color: var(--color-mauve); /* active highlight */
+  }
+}
+
+@media (min-width: 768px) {
+  .carousel-dots {
+    display: none;
+  }
 }
