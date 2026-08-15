@@ -1154,11 +1154,20 @@
   vertical-align: middle;
 }
 
-/* EXPLORE WORKS CTA inside Hero */
-.hero-explore-cta {
-  background-color: #B58A4A;
-  border: transparent;
-  color: #211E1A;
+/* HERO CTA GROUP & BUTTONS */
+.hero-cta-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px; /* 14px-18px gap */
+  margin-top: 0.5rem;
+  width: 100%;
+}
+
+.hero-explore-cta,
+.hero-journey-cta {
+  width: 280px;
+  box-sizing: border-box;
   padding: 0.9rem 2.2rem;
   font-family: var(--font-sans);
   font-size: 0.85rem;
@@ -1168,13 +1177,33 @@
   cursor: pointer;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 0.75rem;
+  border-radius: 0;
   transition: background-color var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast);
+}
+
+.hero-explore-cta {
+  background-color: #B58A4A;
+  border: 1px solid transparent;
+  color: #211E1A;
 }
 
 .hero-explore-cta:hover {
   background-color: #6F2038;
   color: #ffffff;
+}
+
+.hero-journey-cta {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  color: #FFF9EF;
+}
+
+.hero-journey-cta:hover {
+  border-color: #D4A85A;
+  color: #D4A85A;
+  background-color: rgba(255, 255, 255, 0.12);
 }
 
 /* Transparent Header Overlay Styles */
@@ -1183,38 +1212,41 @@
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 100 !important; /* Forces header to sit above all background images & content overlays */
   background: linear-gradient(
     to bottom,
-    rgba(20, 18, 16, 0.28) 0%,
+    rgba(20, 18, 16, 0.35) 0%,
     rgba(20, 18, 16, 0) 100%
   ) !important;
   backdrop-filter: none !important;
-  border-bottom: 1px solid rgba(248, 245, 238, 0.15) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15) !important;
 }
 
 .navbar.navbar-home .nav-logo {
-  color: var(--color-hero-text) !important;
+  color: #FFF9EF !important;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.30) !important;
 }
 
 .navbar.navbar-home .nav-logo-sub {
-  color: var(--color-gold) !important; /* Antique Gold */
+  color: #D4A85A !important;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.30) !important;
 }
 
 .navbar.navbar-home .nav-link {
-  color: rgba(248, 245, 238, 0.75) !important;
+  color: rgba(248, 245, 238, 0.8) !important;
 }
 
 .navbar.navbar-home .nav-link:hover,
 .navbar.navbar-home .nav-link.active {
-  color: var(--color-hero-text) !important;
+  color: #FFF9EF !important;
 }
 
 .navbar.navbar-home .nav-link::after {
-  background-color: var(--color-gold) !important; /* Antique Gold underline */
+  background-color: #D4A85A !important; /* Antique Gold underline */
 }
 
 .navbar.navbar-home .mobile-toggle {
-  color: var(--color-hero-text) !important;
+  color: #FFF9EF !important;
 }
 
 @media (max-width: 767px) {

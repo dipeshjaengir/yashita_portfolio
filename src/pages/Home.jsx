@@ -48,13 +48,22 @@ export default function Home({ setCurrentPage }) {
             <p className="hero-tagline">
               Where Creativity Meets <span className="script-accent hero-script-accent">Curiosity</span>
             </p>
-            <button 
-              className="hero-explore-cta" 
-              onClick={() => handleNavClick('works')}
-              aria-label="Explore Works"
-            >
-              Explore Works <span className="cta-arrow">&rarr;</span>
-            </button>
+            <div className="hero-cta-group">
+              <button 
+                className="hero-explore-cta" 
+                onClick={() => handleNavClick('works')}
+                aria-label="Explore Works"
+              >
+                Explore Works <span className="cta-arrow">&rarr;</span>
+              </button>
+              <button 
+                className="hero-journey-cta" 
+                onClick={() => handleNavClick('about', 'timeline')}
+                aria-label="Artistic Journey"
+              >
+                Artistic Journey <span className="cta-arrow">&rarr;</span>
+              </button>
+            </div>
           </div>
         </div>
       </section>
