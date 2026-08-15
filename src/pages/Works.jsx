@@ -10,12 +10,17 @@ const INITIAL_ARTWORKS = [
   {
     id: 1,
     category: "Mural Art",
-    title: "Mural Artist",
-    size: null,         // Future entry e.g. "15 x 8 feet"
-    price: null,        // Future entry e.g. "Price on Request"
-    medium: null,       // Future entry e.g. "Acrylic on plaster"
-    description: null,  // Future entry e.g. "A commission done for a private courtyard..."
-    imageRatio: "landscape"
+    title: "Botanical Geometry",
+    images: [
+      "/mural-botanical-geometry-1.jpg",
+      "/mural-botanical-geometry-2.jpg",
+      "/mural-botanical-geometry-3.jpg"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "portrait"
   },
   {
     id: 2,
@@ -72,6 +77,12 @@ const INITIAL_ARTWORKS = [
 export default function Works({ setCurrentPage }) {
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [activeArtwork, setActiveArtwork] = useState(null);
+  const [activeImageIndex, setActiveImageIndex] = useState(0);
+
+  const handleArtworkClick = (art) => {
+    setActiveArtwork(art);
+    setActiveImageIndex(0);
+  };
 
   const categories = ['All', 'Mural Art', 'Canvas Painting', 'Custom Artwork'];
 
@@ -130,13 +141,14 @@ export default function Works({ setCurrentPage }) {
           <article 
             key={art.id} 
             className="artwork-card"
-            onClick={() => setActiveArtwork(art)}
+            onClick={() => handleArtworkClick(art)}
             style={{ display: 'flex', flexDirection: 'column' }}
           >
             <PlaceholderImage 
               aspectRatio={art.imageRatio} 
               title={art.title} 
               subtitle="Coming Soon"
+              src={art.images ? art.images[0] : null}
             />
             <div className="artwork-info">
               <span className="artwork-title">{art.title}</span>
@@ -192,13 +204,124 @@ export default function Works({ setCurrentPage }) {
             {/* Modal Body */}
             <div className="grid-two-col" style={{ gap: 0, alignItems: 'stretch' }}>
               {/* Image Column */}
-              <div style={{ padding: 'var(--space-md)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <PlaceholderImage 
-                  aspectRatio={activeArtwork.imageRatio} 
-                  title={activeArtwork.title} 
-                  subtitle="Coming Soon"
-                  style={{ width: '100%', border: 'none' }}
-                />
+              <div style={{ 
+                padding: 'var(--space-md)', 
+                display: 'flex', 
+                flexDirection: 'column',
+                alignItems: 'center', 
+                justifyContent: 'center',
+                backgroundColor: 'var(--color-mist-light)', 
+                position: 'relative',
+                minHeight: '350px',
+                flexGrow: 1
+              }}>
+                {activeArtwork.images && activeArtwork.images.length > 0 ? (
+                  <div style={{ width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 'var(--space-sm)' }}>
+                    {/* Main Image Display */}
+                    <div style={{ position: 'relative', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                      <img 
+                        src={activeArtwork.images[activeImageIndex]} 
+                        alt={`${activeArtwork.title} - View ${activeImageIndex + 1}`}
+                        style={{
+                          maxWidth: '100%',
+                          maxHeight: '400px',
+                          objectFit: 'contain',
+                          border: '1px solid var(--color-border)'
+                        }}
+                      />
+                      
+                      {activeArtwork.images.length > 1 && (
+                        <>
+                          {/* Left Arrow */}
+                          <button
+                            onClick={() => setActiveImageIndex((prev) => (prev === 0 ? activeArtwork.images.length - 1 : prev - 1))}
+                            style={{
+                              position: 'absolute',
+                              left: '10px',
+                              top: '50%',
+                              transform: 'translateY(-50%)',
+                              background: 'rgba(255, 255, 255, 0.85)',
+                              border: '1px solid var(--color-border)',
+                              borderRadius: '50%',
+                              width: '36px',
+                              height: '36px',
+                              display: 'flex',
+                              alignItems: 'center',
+                              justifyContent: 'center',
+                              cursor: 'pointer',
+                              color: 'var(--color-charcoal)',
+                              fontSize: '1.2rem',
+                              fontWeight: 'bold',
+                              boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
+                            }}
+                          >
+                            &larr;
+                          </button>
+                          {/* Right Arrow */}
+                          <button
+                            onClick={() => setActiveImageIndex((prev) => (prev === activeArtwork.images.length - 1 ? 0 : prev + 1))}
+                            style={{
+                              position: 'absolute',
+                              right: '10px',
+                              top: '50%',
+                              transform: 'translateY(-50%)',
+                              background: 'rgba(255, 255, 255, 0.85)',
+                              border: '1px solid var(--color-border)',
+                              borderRadius: '50%',
+                              width: '36px',
+                              height: '36px',
+                              display: 'flex',
+                              alignItems: 'center',
+                              justifyContent: 'center',
+                              cursor: 'pointer',
+                              color: 'var(--color-charcoal)',
+                              fontSize: '1.2rem',
+                              fontWeight: 'bold',
+                              boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
+                            }}
+                          >
+                            &rarr;
+                          </button>
+                        </>
+                      )}
+                    </div>
+                    
+                    {/* Thumbnails Row */}
+                    {activeArtwork.images.length > 1 && (
+                      <div style={{ display: 'flex', gap: '8px', marginTop: '8px' }}>
+                        {activeArtwork.images.map((imgSrc, idx) => (
+                          <button
+                            key={idx}
+                            onClick={() => setActiveImageIndex(idx)}
+                            style={{
+                              padding: 0,
+                              border: `2px solid ${activeImageIndex === idx ? 'var(--color-mauve)' : 'transparent'}`,
+                              backgroundColor: 'transparent',
+                              cursor: 'pointer',
+                              width: '50px',
+                              height: '50px',
+                              overflow: 'hidden',
+                              transition: 'border-color var(--transition-fast)'
+                            }}
+                          >
+                            <img 
+                              src={imgSrc} 
+                              alt="Thumbnail" 
+                              style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                            />
+                          </button>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                ) : (
+                  <PlaceholderImage 
+                    aspectRatio={activeArtwork.imageRatio} 
+                    title={activeArtwork.title} 
+                    subtitle="Coming Soon"
+                    style={{ width: '100%', border: 'none' }}
+                  />
+                )}
               </div>
 
               {/* Information Column */}

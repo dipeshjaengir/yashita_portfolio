@@ -9,7 +9,8 @@ export default function PlaceholderImage({
   aspectRatio = 'portrait', 
   title = 'Artwork Collection',
   subtitle = 'Coming Soon',
-  className = ''
+  className = '',
+  src = null
 }) {
   const ratioClass = `placeholder-${aspectRatio}`;
   
@@ -17,7 +18,21 @@ export default function PlaceholderImage({
     <div className={`placeholder-wrapper ${ratioClass} ${className}`} role="img" aria-label={`${title} - ${subtitle}`}>
       <div className="placeholder-inner-border"></div>
       
-      {type === 'profile' ? (
+      {src ? (
+        <img 
+          src={src} 
+          alt={title}
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            zIndex: 1
+          }}
+        />
+      ) : type === 'profile' ? (
         <>
           <div className="placeholder-logo">Yashita Dedhia</div>
           <div className="placeholder-title" style={{ fontSize: '1.05rem' }}>Profile Photo</div>
