@@ -1,18 +1,22 @@
 :root {
   /* Color System */
-  --color-mist: #F3F1EC;
-  --color-mauve: #B97880;
-  --color-sage: #46543F;
+  --color-mist: #F3EFE6;
+  --color-mauve: #7A2946;
+  --color-sage: #56634A;
   
   /* Tint & Shade Variations for Depth */
-  --color-mist-light: #FAF9F6;
-  --color-mauve-light: #D6A6AC;
-  --color-mauve-dark: #8F4850;
-  --color-sage-light: #6D7F65;
-  --color-sage-dark: #313B2C;
-  --color-charcoal: #343632; /* Sophisticated deep charcoal-olive for elegant readability */
-  --color-border: rgba(70, 84, 63, 0.15); /* Transparent Dark Sage border */
-  --color-hero-text: #F5F0E8; /* Warm Ivory for Hero elements */
+  --color-mist-light: #F7F3EB;
+  --color-mauve-light: #B07C8D;
+  --color-mauve-dark: #4E1A2C;
+  --color-sage-light: #7F8D73;
+  --color-sage-dark: #3B4433;
+  --color-charcoal: #292824; /* Sophisticated deep charcoal-olive for elegant readability */
+  --color-border: rgba(122, 41, 70, 0.15); /* Transparent Burgundy border */
+  --color-hero-text: #F7F1E7; /* Warm Ivory for Hero elements */
+  
+  /* Additional Palette Colors */
+  --color-navy: #263F59;
+  --color-gold: #B18A4A;
   
   /* Typography Families */
   --font-serif: 'Cormorant Garamond', serif;

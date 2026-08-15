@@ -19,6 +19,20 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  max-width: 100% !important; /* Proper full-width layout */
+  padding-inline: 24px !important;
+}
+
+@media (min-width: 768px) {
+  .nav-container {
+    padding-inline: 56px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nav-container {
+    padding-inline: 72px !important;
+  }
 }
 
 .nav-logo {
@@ -471,7 +485,7 @@
 }
 
 .artwork-card:hover .placeholder-inner-border {
-  border-color: rgba(185, 104, 115, 0.45);
+  border-color: rgba(122, 41, 70, 0.45);
   transform: scale(0.98);
 }
 
@@ -586,23 +600,23 @@
 
 /* Present/Future style */
 .timeline-item-present .timeline-dot {
-  background-color: var(--color-sage);
+  background-color: var(--color-mauve);
   width: 16px;
   height: 16px;
   transform: translate(-50%, -50%);
-  box-shadow: 0 0 0 4px rgba(79, 98, 69, 0.25);
+  box-shadow: 0 0 0 4px rgba(122, 41, 70, 0.25);
   animation: timelinePulse 2.0s infinite ease-in-out;
 }
 
 @keyframes timelinePulse {
   0% {
-    box-shadow: 0 0 0 0px rgba(79, 98, 69, 0.4);
+    box-shadow: 0 0 0 0px rgba(122, 41, 70, 0.4);
   }
   70% {
-    box-shadow: 0 0 0 6px rgba(79, 98, 69, 0);
+    box-shadow: 0 0 0 6px rgba(122, 41, 70, 0);
   }
   100% {
-    box-shadow: 0 0 0 0px rgba(79, 98, 69, 0);
+    box-shadow: 0 0 0 0px rgba(122, 41, 70, 0);
   }
 }
 
@@ -655,7 +669,7 @@
 }
 
 .profile-image-container:hover .profile-image-border {
-  border-color: rgba(185, 104, 115, 0.45); /* Mauve hover highlight */
+  border-color: rgba(122, 41, 70, 0.45); /* Burgundy hover highlight */
 }
 
 /* ==========================================
@@ -721,7 +735,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(79, 98, 69, 0.15); /* Muted light Sage */
+  background-color: rgba(86, 99, 74, 0.15); /* Muted light Olive */
 }
 
 .loading-progress-bar {
@@ -979,7 +993,7 @@
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    background-color: rgba(79, 98, 69, 0.25); /* Muted Sage dot */
+    background-color: rgba(122, 41, 70, 0.25); /* Burgundy dot */
     transition: background-color var(--transition-fast);
   }
 
@@ -1027,7 +1041,7 @@
   object-fit: cover;
   object-position: center 25%; /* Tastefully centered to focus on face and easel */
   z-index: 1;
-  filter: blur(1.5px) brightness(0.92) contrast(0.95);
+  filter: blur(2px) brightness(0.92) contrast(0.95);
   transform: scale(1.03); /* Scales image slightly to avoid border bleeding from blur filter */
 }
 
