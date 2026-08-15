@@ -38,6 +38,7 @@ export default function Home({ setCurrentPage }) {
           />
         </div>
         <div className="hero-dark-overlay"></div>
+        <div className="hero-white-fade-overlay"></div>
         <div className="container hero-content-container">
           <div className="hero-centered-content">
             <span className="hero-small-label">Evara by Yashi</span>
