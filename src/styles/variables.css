@@ -1,13 +1,13 @@
 :root {
   /* Color System */
   --color-mist: #FFFFFF;
-  --color-mauve: #6F2038;
+  --color-mauve: #7A2945;
   --color-sage: #514C47; /* Scrubbed green: mapped to secondary text charcoal */
   
   /* Tint & Shade Variations for Depth */
   --color-mist-light: #FFFFFF;
-  --color-mauve-light: #8C3751;
-  --color-mauve-dark: #54172B;
+  --color-mauve-light: #9C4B64;
+  --color-mauve-dark: #581E31;
   --color-sage-light: #E5E1DC;
   --color-sage-dark: #292522; /* Heading color: charcoal */
   --color-charcoal: #292522; /* Sophisticated deep charcoal for elegant readability */
