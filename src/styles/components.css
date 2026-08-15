@@ -1237,30 +1237,30 @@
   box-shadow: none !important;
 }
 
-.navbar.navbar-home .nav-logo {
+.navbar.navbar-home > .nav-container .nav-logo {
   color: #FFF9EF !important;
   text-shadow: 0 1px 8px rgba(0, 0, 0, 0.30) !important;
 }
 
-.navbar.navbar-home .nav-logo-sub {
+.navbar.navbar-home > .nav-container .nav-logo-sub {
   color: #D4A85A !important;
   text-shadow: 0 1px 8px rgba(0, 0, 0, 0.30) !important;
 }
 
-.navbar.navbar-home .nav-link {
+.navbar.navbar-home > .nav-container .nav-link {
   color: rgba(248, 245, 238, 0.8) !important;
 }
 
-.navbar.navbar-home .nav-link:hover,
-.navbar.navbar-home .nav-link.active {
+.navbar.navbar-home > .nav-container .nav-link:hover,
+.navbar.navbar-home > .nav-container .nav-link.active {
   color: #FFF9EF !important;
 }
 
-.navbar.navbar-home .nav-link::after {
+.navbar.navbar-home > .nav-container .nav-link::after {
   background-color: #D4A85A !important; /* Antique Gold underline */
 }
 
-.navbar.navbar-home .mobile-toggle {
+.navbar.navbar-home > .nav-container .mobile-toggle {
   color: #FFF9EF !important;
 }
 
