@@ -24,7 +24,7 @@ export default function Navbar({ currentPage, setCurrentPage }) {
   };
 
   return (
-    <nav className="navbar" role="navigation" aria-label="Main menu">
+    <nav className={`navbar ${currentPage === 'home' ? 'navbar-home' : ''}`} role="navigation" aria-label="Main menu">
       <div className="container nav-container">
         <a 
           href="#home" 

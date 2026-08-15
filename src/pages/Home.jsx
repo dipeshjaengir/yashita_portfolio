@@ -20,69 +20,39 @@ export default function Home({ setCurrentPage }) {
   };
 
   return (
-    <div className="page-container container section-spacing">
-      {/* 1. Hero Introduction */}
-      <section className="home-hero-container">
-        {/* Left Column: Typography & Info */}
-        <header style={{ textAlign: 'left' }}>
-          <p style={{ 
-            textTransform: 'uppercase', 
-            letterSpacing: '0.2em', 
-            fontSize: '0.85rem', 
-            color: 'var(--color-sage)',
-            marginBottom: 'var(--space-sm)',
-            fontWeight: 400
-          }}>
-            Yashita Dedhia
-          </p>
-          <h1 style={{ marginBottom: 'var(--space-md)' }}>
-            Where Creativity <br />
-            Meets <span className="script-accent" style={{ fontSize: '1.2em' }}>Curiosity</span>
-          </h1>
-          <p style={{ 
-            maxWidth: '600px', 
-            fontSize: '1.15rem', 
-            color: 'var(--color-charcoal)',
-            fontWeight: 300,
-            lineHeight: '1.8'
-          }}>
-            Yashita Dedhia is a fine artist, textile designer, and educator. Operating under the studio 
-            <strong> Evara by Yashi</strong>, she explores materials, textures, and visual narratives to create 
-            bespoke canvas paintings, murals, and custom artwork.
-          </p>
-          <div style={{ display: 'flex', gap: 'var(--space-md)', marginTop: 'var(--space-md)', flexWrap: 'wrap' }}>
+    <div className="home-page-wrapper">
+      {/* 1. Immersive Full-Screen Hero */}
+      <section className="home-hero-fullscreen">
+        <img 
+          src="/yashita-easel.jpg" 
+          alt="Yashita Dedhia with easel artwork" 
+          className="hero-bg-img"
+          loading="eager"
+        />
+        <div className="hero-dark-overlay"></div>
+        <div className="container hero-content-container">
+          <div className="hero-centered-content">
+            <span className="hero-small-label">Evara by Yashi</span>
+            <h1 className="hero-main-name">Yashita Dedhia</h1>
+            <p className="hero-description">
+              Fine Artist &bull; Textile Designer &bull; Educator
+            </p>
+            <p className="hero-tagline">
+              Where Creativity Meets <span className="script-accent hero-script-accent">Curiosity</span>
+            </p>
             <button 
-              className="hero-cta-primary" 
+              className="hero-explore-cta" 
               onClick={() => handleNavClick('works')}
               aria-label="Explore Works"
             >
-              Explore Works <span className="cta-arrow">→</span>
+              Explore Works <span className="cta-arrow">&rarr;</span>
             </button>
-            <button 
-              className="hero-cta-secondary" 
-              onClick={() => handleNavClick('about', 'timeline')}
-              aria-label="Artistic Journey"
-            >
-              Artistic Journey <span className="cta-arrow">→</span>
-            </button>
-          </div>
-        </header>
-
-        {/* Right Column: Refined Editorial Portrait */}
-        <div className="hero-portrait-wrapper">
-          <div className="profile-image-container">
-            <div className="profile-image-border"></div>
-            <div className="profile-image-inner">
-              <img 
-                src="/yashita-profile.jpg" 
-                alt="Yashita Dedhia - Fine Artist & Textile Designer" 
-                className="profile-image"
-                loading="eager"
-              />
-            </div>
           </div>
         </div>
       </section>
+
+      {/* Main page content wrapped in container to maintain alignments */}
+      <div className="container section-spacing" style={{ paddingTop: 'var(--space-xl)' }}>
 
       {/* 2. Philosophy Quote (tasteful, editorial statement) */}
       <section style={{ 
@@ -185,5 +155,6 @@ export default function Home({ setCurrentPage }) {
         </div>
       </section>
     </div>
+  </div>
   );
 }
