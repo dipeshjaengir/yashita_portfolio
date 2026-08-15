@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import { X, ArrowUpRight } from 'lucide-react';
 import PlaceholderImage from '../components/PlaceholderImage';
 
@@ -143,6 +144,26 @@ export default function Works({ setCurrentPage }) {
   const [activeArtwork, setActiveArtwork] = useState(null);
   const [activeImageIndex, setActiveImageIndex] = useState(0);
 
+  useEffect(() => {
+    if (activeArtwork) {
+      const originalOverflow = document.body.style.overflow;
+      document.body.style.overflow = 'hidden';
+
+      const handleKeyDown = (e) => {
+        if (e.key === 'Escape') {
+          setActiveArtwork(null);
+        }
+      };
+
+      window.addEventListener('keydown', handleKeyDown);
+
+      return () => {
+        document.body.style.overflow = originalOverflow;
+        window.removeEventListener('keydown', handleKeyDown);
+      };
+    }
+  }, [activeArtwork]);
+
   const handleArtworkClick = (art) => {
     setActiveArtwork(art);
     setActiveImageIndex(0);
@@ -223,7 +244,7 @@ export default function Works({ setCurrentPage }) {
       </div>
 
       {/* Lightbox / Details Modal */}
-      {activeArtwork && (
+      {activeArtwork && createPortal(
         <div className="modal-overlay" onClick={() => setActiveArtwork(null)}>
           <div className="modal-card" onClick={e => e.stopPropagation()}>
             {/* Close Button */}
@@ -412,7 +433,8 @@ export default function Works({ setCurrentPage }) {
               </div>
             </div>
           </div>
-        </div>
+        </div>,
+        document.body
       )}
     </div>
   );
