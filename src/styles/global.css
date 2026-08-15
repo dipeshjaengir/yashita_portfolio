@@ -89,18 +89,12 @@ button {
   width: 100%;
   max-width: var(--max-width-site);
   margin: 0 auto;
-  padding: 0 20px;
-}
-
-@media (min-width: 480px) {
-  .container {
-    padding: 0 24px;
-  }
+  padding: 0 24px; /* 24px safe editorial padding on mobile and tablet */
 }
 
 @media (min-width: 768px) {
   .container {
-    padding: 0 var(--space-lg);
+    padding: 0 var(--space-lg); /* Desktop padding */
   }
 }
 

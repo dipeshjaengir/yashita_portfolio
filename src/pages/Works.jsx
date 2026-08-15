@@ -10,7 +10,7 @@ const INITIAL_ARTWORKS = [
   {
     id: 1,
     category: "Mural Art",
-    title: "Mural Art Collection",
+    title: "Mural Artist",
     size: null,         // Future entry e.g. "15 x 8 feet"
     price: null,        // Future entry e.g. "Price on Request"
     medium: null,       // Future entry e.g. "Acrylic on plaster"
@@ -20,7 +20,7 @@ const INITIAL_ARTWORKS = [
   {
     id: 2,
     category: "Canvas Painting",
-    title: "Canvas Painting Collection",
+    title: "Canvas Painting",
     size: null,
     price: null,
     medium: null,
@@ -30,7 +30,7 @@ const INITIAL_ARTWORKS = [
   {
     id: 3,
     category: "Custom Artwork",
-    title: "Custom Artwork Collection",
+    title: "Custom Artwork",
     size: null,
     price: null,
     medium: null,
@@ -40,7 +40,7 @@ const INITIAL_ARTWORKS = [
   {
     id: 4,
     category: "Mural Art",
-    title: "Mural Art Collection",
+    title: "Mural Artist",
     size: null,
     price: null,
     medium: null,
@@ -50,7 +50,7 @@ const INITIAL_ARTWORKS = [
   {
     id: 5,
     category: "Canvas Painting",
-    title: "Canvas Painting Collection",
+    title: "Canvas Painting",
     size: null,
     price: null,
     medium: null,
@@ -60,7 +60,7 @@ const INITIAL_ARTWORKS = [
   {
     id: 6,
     category: "Custom Artwork",
-    title: "Custom Artwork Collection",
+    title: "Custom Artwork",
     size: null,
     price: null,
     medium: null,

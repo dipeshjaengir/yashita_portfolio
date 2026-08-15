@@ -45,11 +45,11 @@ export default function Workshops({ setCurrentPage }) {
         </section>
 
         {/* Service 2: Canvas Painting & Custom Artwork */}
-        <section className="grid-two-col" style={{ alignItems: 'center' }}>
-          <div style={{ order: window.innerWidth > 768 ? 2 : 1 }}>
+        <section className="grid-two-col workshops-alternate" style={{ alignItems: 'center' }}>
+          <div>
             <PlaceholderImage aspectRatio="square" title="Custom Canvas Painting" subtitle="Coming Soon" />
           </div>
-          <div style={{ order: window.innerWidth > 768 ? 1 : 2 }}>
+          <div>
             <span style={{ fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.15em', color: 'var(--color-mauve)' }}>Practice Area II</span>
             <h2 style={{ fontSize: '1.75rem', marginTop: '0.25rem', marginBottom: '0.75rem' }}>Canvas Painting &amp; Custom Commissions</h2>
             <p style={{ marginBottom: 'var(--space-sm)', fontSize: '0.95rem' }}>
