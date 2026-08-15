@@ -1,0 +1,36 @@
+:root {
+  /* Color System */
+  --color-mist: #F4F3F1;
+  --color-mauve: #D8959B;
+  --color-sage: #829672;
+  
+  /* Tint & Shade Variations for Depth */
+  --color-mist-light: #FAF9F8;
+  --color-mauve-light: #E8B9BD;
+  --color-mauve-dark: #B56D73;
+  --color-sage-light: #A3B595;
+  --color-sage-dark: #586B4C;
+  --color-charcoal: #2A2E27; /* Sophisticated deep charcoal-olive for elegant readability */
+  --color-border: rgba(130, 150, 114, 0.2); /* Transparent Sage border */
+  
+  /* Typography Families */
+  --font-serif: 'Cormorant Garamond', serif;
+  --font-script: 'Pinyon Script', cursive;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Spacing System */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: 8rem;
+  
+  /* Standard Transition Speeds */
+  --transition-fast: 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --transition-smooth: 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  --transition-lazy: 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  
+  /* Layout Constraints */
+  --max-width-site: 1400px;
+  --max-width-content: 800px;
+}

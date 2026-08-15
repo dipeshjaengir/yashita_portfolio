@@ -1,0 +1,206 @@
+@import './variables.css';
+
+/* CSS Reset & Core Styling */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--color-mist);
+  color: var(--color-charcoal);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Typography System */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  color: var(--color-sage-dark);
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-size: clamp(1.5rem, 2.5vw, 2.2rem);
+}
+
+p {
+  font-size: 1.05rem;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+  line-height: 1.7;
+  color: var(--color-charcoal);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast), border-color var(--transition-fast);
+}
+
+button {
+  background: none;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Elegant calligraphic helper for accent words */
+.script-accent {
+  font-family: var(--font-script);
+  font-size: 1.75em;
+  font-weight: 400;
+  color: var(--color-mauve);
+  line-height: 0.5;
+  display: inline-block;
+  transform: translateY(0.15em);
+  padding: 0 0.2em;
+}
+
+/* Editorial layout utilities */
+.container {
+  width: 100%;
+  max-width: var(--max-width-site);
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 var(--space-lg);
+  }
+}
+
+.section-spacing {
+  padding: var(--space-lg) 0;
+}
+
+@media (min-width: 768px) {
+  .section-spacing {
+    padding: var(--space-xl) 0;
+  }
+}
+
+/* Text highlight utility */
+.text-highlight {
+  color: var(--color-mauve);
+}
+
+/* Accessibility: Focus States */
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible {
+  outline: 2px solid var(--color-mauve);
+  outline-offset: 4px;
+}
+
+/* Animations & Transitions */
+@keyframes fadeInSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeInSlideUp var(--transition-lazy) forwards;
+}
+
+/* Stagger delay classes */
+.delay-1 { animation-delay: 0.15s; }
+.delay-2 { animation-delay: 0.3s; }
+.delay-3 { animation-delay: 0.45s; }
+.delay-4 { animation-delay: 0.6s; }
+
+/* Image hover effect */
+.hover-zoom-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.hover-zoom-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-lazy);
+}
+
+.hover-zoom-container:hover .hover-zoom-image {
+  transform: scale(1.03);
+}
+
+/* Smooth Transitions for Router Views */
+.page-container {
+  opacity: 0;
+  transform: translateY(15px);
+  animation: fadeInSlideUp var(--transition-lazy) forwards;
+  min-height: calc(100vh - 180px); /* Fill space between Nav and Footer */
+}
+
+/* Utility layout helpers */
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-two-col {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-md);
+}
+
+@media (min-width: 768px) {
+  .grid-two-col {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-lg);
+    align-items: center;
+  }
+}
+
+/* Prefers Reduced Motion support */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-delay: 0s !important;
+    animation-duration: 0s !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0s !important;
+    scroll-behavior: auto !important;
+  }
+  
+  .animate-fade-in, .page-container {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  
+  .hover-zoom-image {
+    transition: none !important;
+  }
+  .hover-zoom-container:hover .hover-zoom-image {
+    transform: none !important;
+  }
+}
