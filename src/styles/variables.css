@@ -1,17 +1,18 @@
 :root {
   /* Color System */
-  --color-mist: #F4F3F1;
-  --color-mauve: #B96873;
-  --color-sage: #4F6245;
+  --color-mist: #F3F1EC;
+  --color-mauve: #B97880;
+  --color-sage: #46543F;
   
   /* Tint & Shade Variations for Depth */
-  --color-mist-light: #FAF9F8;
-  --color-mauve-light: #D18E97;
-  --color-mauve-dark: #944650;
-  --color-sage-light: #728766;
-  --color-sage-dark: #37482F;
-  --color-charcoal: #2A2E27; /* Sophisticated deep charcoal-olive for elegant readability */
-  --color-border: rgba(79, 98, 69, 0.2); /* Transparent Dark Sage border */
+  --color-mist-light: #FAF9F6;
+  --color-mauve-light: #D6A6AC;
+  --color-mauve-dark: #8F4850;
+  --color-sage-light: #6D7F65;
+  --color-sage-dark: #313B2C;
+  --color-charcoal: #343632; /* Sophisticated deep charcoal-olive for elegant readability */
+  --color-border: rgba(70, 84, 63, 0.15); /* Transparent Dark Sage border */
+  --color-hero-text: #F5F0E8; /* Warm Ivory for Hero elements */
   
   /* Typography Families */
   --font-serif: 'Cormorant Garamond', serif;
