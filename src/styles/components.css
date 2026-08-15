@@ -796,8 +796,8 @@
 }
 
 .hero-portrait-wrapper {
-  width: 80%;
-  max-width: 320px;
+  width: 100%;
+  max-width: 260px;
   margin: var(--space-md) auto 0; /* Center by default on mobile/tablet */
 }
 
@@ -808,6 +808,7 @@
   }
 
   .hero-portrait-wrapper {
+    width: 100%;
     max-width: 370px; /* Refined visual footprint (~15% increase) */
     margin-left: var(--space-md); /* Reduced gap to left column */
     margin-right: var(--space-lg); /* Soft margins from the right page boundary */
@@ -816,8 +817,8 @@
 }
 
 .about-portrait-wrapper {
-  width: 85%;
-  max-width: 340px;
+  width: 100%;
+  max-width: 280px;
   margin: 0 auto var(--space-md);
 }
 
@@ -923,6 +924,18 @@
 }
 
 @media (max-width: 767px) {
+  .hero-portrait-wrapper {
+    width: 80% !important;
+    max-width: 320px !important;
+    margin: var(--space-md) auto 0 !important;
+  }
+
+  .about-portrait-wrapper {
+    width: 85% !important;
+    max-width: 340px !important;
+    margin: 0 auto var(--space-md) !important;
+  }
+
   .selected-work-carousel-container {
     margin: 0;
     overflow: hidden;

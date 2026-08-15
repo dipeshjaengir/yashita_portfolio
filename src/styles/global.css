@@ -31,31 +31,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: clamp(1.85rem, 6vw, 4.5rem);
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
   letter-spacing: -0.02em;
 }
 
 h2 {
-  font-size: clamp(1.45rem, 4vw, 3rem);
+  font-size: clamp(2rem, 4vw, 3rem);
   letter-spacing: -0.01em;
 }
 
 h3 {
-  font-size: clamp(1.2rem, 2.5vw, 2.2rem);
+  font-size: clamp(1.5rem, 2.5vw, 2.2rem);
 }
 
 p {
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-weight: 300;
   letter-spacing: 0.01em;
-  line-height: 1.75;
+  line-height: 1.7;
   color: var(--color-charcoal);
-}
-
-@media (min-width: 768px) {
-  p {
-    font-size: 1.05rem;
-  }
 }
 
 a {
@@ -89,12 +83,36 @@ button {
   width: 100%;
   max-width: var(--max-width-site);
   margin: 0 auto;
-  padding: 0 24px; /* 24px safe editorial padding on mobile and tablet */
+  padding: 0 var(--space-md);
 }
 
 @media (min-width: 768px) {
   .container {
-    padding: 0 var(--space-lg); /* Desktop padding */
+    padding: 0 var(--space-lg);
+  }
+}
+
+/* Mobile-only responsive overrides (max-width: 767px) */
+@media (max-width: 767px) {
+  h1 {
+    font-size: clamp(1.85rem, 6vw, 4.5rem);
+  }
+  
+  h2 {
+    font-size: clamp(1.45rem, 4vw, 3rem);
+  }
+  
+  h3 {
+    font-size: clamp(1.2rem, 2.5vw, 2.2rem);
+  }
+  
+  p {
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+  
+  .container {
+    padding: 0 24px !important; /* Strict 24px left + 24px right padding on mobile */
   }
 }
 
