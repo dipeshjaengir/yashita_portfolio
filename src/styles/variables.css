@@ -1,22 +1,22 @@
 :root {
   /* Color System */
-  --color-mist: #F3EFE6;
-  --color-mauve: #7A2946;
-  --color-sage: #56634A;
+  --color-mist: #F3EEE5;
+  --color-mauve: #70263D;
+  --color-sage: #56604C;
   
   /* Tint & Shade Variations for Depth */
-  --color-mist-light: #F7F3EB;
-  --color-mauve-light: #B07C8D;
-  --color-mauve-dark: #4E1A2C;
-  --color-sage-light: #7F8D73;
-  --color-sage-dark: #3B4433;
-  --color-charcoal: #292824; /* Sophisticated deep charcoal-olive for elegant readability */
-  --color-border: rgba(122, 41, 70, 0.15); /* Transparent Burgundy border */
-  --color-hero-text: #F7F1E7; /* Warm Ivory for Hero elements */
+  --color-mist-light: #F7F5F0;
+  --color-mauve-light: #9C4A61;
+  --color-mauve-dark: #481827;
+  --color-sage-light: #798370;
+  --color-sage-dark: #34382F; /* Heading color */
+  --color-charcoal: #292724; /* Sophisticated deep charcoal for elegant readability */
+  --color-border: rgba(112, 38, 61, 0.16); /* Transparent Burgundy border */
+  --color-hero-text: #F7F2E8; /* Warm Ivory for Hero elements */
   
   /* Additional Palette Colors */
-  --color-navy: #263F59;
-  --color-gold: #B18A4A;
+  --color-navy: #263B50;
+  --color-gold: #B18A52;
   
   /* Typography Families */
   --font-serif: 'Cormorant Garamond', serif;
