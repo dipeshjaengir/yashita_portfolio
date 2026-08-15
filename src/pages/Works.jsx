@@ -263,7 +263,7 @@ export default function Works({ setCurrentPage }) {
                 {activeArtwork.images && activeArtwork.images.length > 0 ? (
                   <div style={{ width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 'var(--space-sm)' }}>
                     {/* Main Image Display */}
-                    <div style={{ position: 'relative', display: 'inline-block' }}>
+                    <div style={{ position: 'relative', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                       <img 
                         src={activeArtwork.images[activeImageIndex]} 
                         alt={`${activeArtwork.title} - View ${activeImageIndex + 1}`}
@@ -275,16 +275,50 @@ export default function Works({ setCurrentPage }) {
                           {/* Left Arrow */}
                           <button
                             onClick={() => setActiveImageIndex((prev) => (prev === 0 ? activeArtwork.images.length - 1 : prev - 1))}
-                            className="gallery-arrow left-arrow"
-                            aria-label="Previous image"
+                            style={{
+                              position: 'absolute',
+                              left: '10px',
+                              top: '50%',
+                              transform: 'translateY(-50%)',
+                              background: 'rgba(255, 255, 255, 0.85)',
+                              border: '1px solid var(--color-border)',
+                              borderRadius: '50%',
+                              width: '36px',
+                              height: '36px',
+                              display: 'flex',
+                              alignItems: 'center',
+                              justifyContent: 'center',
+                              cursor: 'pointer',
+                              color: 'var(--color-charcoal)',
+                              fontSize: '1.2rem',
+                              fontWeight: 'bold',
+                              boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
+                            }}
                           >
                             &larr;
                           </button>
                           {/* Right Arrow */}
                           <button
                             onClick={() => setActiveImageIndex((prev) => (prev === activeArtwork.images.length - 1 ? 0 : prev + 1))}
-                            className="gallery-arrow right-arrow"
-                            aria-label="Next image"
+                            style={{
+                              position: 'absolute',
+                              right: '10px',
+                              top: '50%',
+                              transform: 'translateY(-50%)',
+                              background: 'rgba(255, 255, 255, 0.85)',
+                              border: '1px solid var(--color-border)',
+                              borderRadius: '50%',
+                              width: '36px',
+                              height: '36px',
+                              display: 'flex',
+                              alignItems: 'center',
+                              justifyContent: 'center',
+                              cursor: 'pointer',
+                              color: 'var(--color-charcoal)',
+                              fontSize: '1.2rem',
+                              fontWeight: 'bold',
+                              boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
+                            }}
                           >
                             &rarr;
                           </button>
