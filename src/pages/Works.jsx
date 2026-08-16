@@ -15,7 +15,8 @@ const INITIAL_ARTWORKS = [
     images: [
       "/mural-cosmic-mandala-1.jpg",
       "/mural-cosmic-mandala-2.jpg",
-      "/mural-cosmic-mandala-3.jpg"
+      "/mural-cosmic-mandala-3.jpg",
+      "/mural-cosmic-mandala-4.jpg"
     ],
     size: "7sqft x 4sqft",
     price: null,
@@ -29,7 +30,8 @@ const INITIAL_ARTWORKS = [
     title: "A Fusion of Pichwai & Lippan",
     images: [
       "/mural-fusion-pichwai-lippan-1.jpg",
-      "/mural-fusion-pichwai-lippan-2.jpg"
+      "/mural-fusion-pichwai-lippan-2.jpg",
+      "/mural-fusion-pichwai-lippan-3.jpg"
     ],
     size: "6sqft x 4sqft",
     price: null,
