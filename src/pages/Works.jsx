@@ -173,8 +173,9 @@ const INITIAL_ARTWORKS = [
     subcategory: "Faceless Art",
     title: null,
     images: [
-      "/faceless-art-1a.jpg",
-      "/faceless-art-1b.jpg"
+      "/faceless-art-1b.jpg",
+      "/faceless-art-1a.jpg"
+      
     ],
     size: null,
     price: null,
@@ -188,8 +189,8 @@ const INITIAL_ARTWORKS = [
     subcategory: "Faceless Art",
     title: null,
     images: [
+      "/faceless-art-2b.jpg",
       "/faceless-art-2a.jpg",
-      "/faceless-art-2b.jpg"
     ],
     size: null,
     price: null,
@@ -203,8 +204,8 @@ const INITIAL_ARTWORKS = [
     subcategory: "Faceless Art",
     title: null,
     images: [
-      "/faceless-art-3a.jpg",
-      "/faceless-art-3b.jpg"
+      "/faceless-art-4b.jpg",
+      "/faceless-art-3a.jpg"
     ],
     size: null,
     price: null,
@@ -218,8 +219,8 @@ const INITIAL_ARTWORKS = [
     subcategory: "Faceless Art",
     title: null,
     images: [
-      "/faceless-art-4a.jpg",
-      "/faceless-art-4b.jpg"
+      "/faceless-art-3b.jpg",
+      "/faceless-art-4a.jpg"      
     ],
     size: null,
     price: null,
@@ -248,8 +249,8 @@ const INITIAL_ARTWORKS = [
     subcategory: "Faceless Art",
     title: null,
     images: [
-      "/faceless-art-6a.jpg",
-      "/faceless-art-6b.jpg"
+      "/faceless-art-6b.jpg",
+      "/faceless-art-6a.jpg"
     ],
     size: null,
     price: null,
