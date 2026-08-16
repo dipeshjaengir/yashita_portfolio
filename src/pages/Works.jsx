@@ -136,6 +136,36 @@ const INITIAL_ARTWORKS = [
     medium: null,
     description: null,
     imageRatio: "square"
+  },
+  {
+    id: 11,
+    category: "Canvas Painting",
+    subcategory: "Expression Art",
+    title: null,
+    images: [
+      "/canvas-expression-art-1a.jpg",
+      "/canvas-expression-art-1b.jpg"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "square"
+  },
+  {
+    id: 12,
+    category: "Canvas Painting",
+    subcategory: "Expression Art",
+    title: null,
+    images: [
+      "/canvas-expression-art-2a.jpg",
+      "/canvas-expression-art-2b.jpg"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "portrait"
   }
 ];
 
@@ -231,13 +261,13 @@ export default function Works({ setCurrentPage }) {
           >
             <PlaceholderImage 
               aspectRatio={art.imageRatio} 
-              title={art.title} 
+              title={art.title || (art.subcategory ? `${art.category} — ${art.subcategory}` : art.category)} 
               subtitle="Coming Soon"
               src={art.images ? art.images[0] : null}
             />
             <div className="artwork-info">
-              <span className="artwork-title">{art.title}</span>
-              <span className="artwork-meta">{art.category}</span>
+              {art.title && <span className="artwork-title">{art.title}</span>}
+              <span className="artwork-meta">{art.category}{art.subcategory && ` — ${art.subcategory}`}</span>
             </div>
           </article>
         ))}
@@ -357,7 +387,7 @@ export default function Works({ setCurrentPage }) {
                 ) : (
                   <PlaceholderImage 
                     aspectRatio={activeArtwork.imageRatio} 
-                    title={activeArtwork.title} 
+                    title={activeArtwork.title || (activeArtwork.subcategory ? `${activeArtwork.category} — ${activeArtwork.subcategory}` : activeArtwork.category)} 
                     subtitle="Coming Soon"
                     style={{ width: '100%', border: 'none' }}
                   />
@@ -368,11 +398,13 @@ export default function Works({ setCurrentPage }) {
               <div className="modal-info-col">
                 <div>
                   <span className="script-accent" style={{ fontSize: '1.25rem', marginBottom: '0.25rem', color: 'var(--color-mauve)' }}>
-                    {activeArtwork.category}
+                    {activeArtwork.category}{activeArtwork.subcategory && ` — ${activeArtwork.subcategory}`}
                   </span>
-                  <h2 style={{ fontSize: '1.8rem', marginBottom: 'var(--space-sm)' }}>
-                    {activeArtwork.title}
-                  </h2>
+                  {activeArtwork.title && (
+                    <h2 style={{ fontSize: '1.8rem', marginBottom: 'var(--space-sm)' }}>
+                      {activeArtwork.title}
+                    </h2>
+                  )}
                   <div style={{ height: '1px', backgroundColor: 'var(--color-border)', margin: 'var(--space-sm) 0' }}></div>
                   
                   {/* Factual documentation ready states */}
