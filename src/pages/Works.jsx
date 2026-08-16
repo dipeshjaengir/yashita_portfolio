@@ -166,6 +166,96 @@ const INITIAL_ARTWORKS = [
     medium: null,
     description: null,
     imageRatio: "portrait"
+  },
+  {
+    id: 13,
+    category: "Canvas Painting",
+    subcategory: "Faceless Art",
+    title: null,
+    images: [
+      "/faceless-art-1a.jpg",
+      "/faceless-art-1b.jpg"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "portrait"
+  },
+  {
+    id: 14,
+    category: "Canvas Painting",
+    subcategory: "Faceless Art",
+    title: null,
+    images: [
+      "/faceless-art-2a.jpg",
+      "/faceless-art-2b.jpg"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "portrait"
+  },
+  {
+    id: 15,
+    category: "Canvas Painting",
+    subcategory: "Faceless Art",
+    title: null,
+    images: [
+      "/faceless-art-3a.jpg",
+      "/faceless-art-3b.jpg"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "portrait"
+  },
+  {
+    id: 16,
+    category: "Canvas Painting",
+    subcategory: "Faceless Art",
+    title: null,
+    images: [
+      "/faceless-art-4a.jpg",
+      "/faceless-art-4b.jpg"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "portrait"
+  },
+  {
+    id: 17,
+    category: "Canvas Painting",
+    subcategory: "Faceless Art",
+    title: null,
+    images: [
+      "/faceless-art-5a.jpg",
+      "/faceless-art-5b.jpg"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "portrait"
+  },
+  {
+    id: 18,
+    category: "Canvas Painting",
+    subcategory: "Faceless Art",
+    title: null,
+    images: [
+      "/faceless-art-6a.jpg",
+      "/faceless-art-6b.jpg"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "portrait"
   }
 ];
 
@@ -199,11 +289,14 @@ export default function Works({ setCurrentPage }) {
     setActiveImageIndex(0);
   };
 
-  const categories = ['All', 'Mural Art', 'Canvas Painting', 'Custom Artwork'];
+  const categories = ['All', 'Mural Art', 'Expression Art', 'Faceless Art', 'Custom Artwork'];
 
   const filteredArtworks = selectedCategory === 'All'
     ? INITIAL_ARTWORKS
-    : INITIAL_ARTWORKS.filter(art => art.category === selectedCategory);
+    : INITIAL_ARTWORKS.filter(art => 
+        art.category === selectedCategory || 
+        art.subcategory === selectedCategory
+      );
 
   return (
     <div className="page-container container section-spacing">
