@@ -13,10 +13,10 @@ const INITIAL_ARTWORKS = [
     category: "Mural Art",
     title: "The Cosmic Mandala — Journey Within",
     images: [
+      "/mural-cosmic-mandala-4.jpg",
       "/mural-cosmic-mandala-1.jpg",
       "/mural-cosmic-mandala-2.jpg",
-      "/mural-cosmic-mandala-3.jpg",
-      "/mural-cosmic-mandala-4.jpg"
+      "/mural-cosmic-mandala-3.jpg"
     ],
     size: "7sqft x 4sqft",
     price: null,
@@ -29,9 +29,9 @@ const INITIAL_ARTWORKS = [
     category: "Mural Art",
     title: "A Fusion of Pichwai & Lippan",
     images: [
+      "/mural-fusion-pichwai-lippan-3.jpg",
       "/mural-fusion-pichwai-lippan-1.jpg",
-      "/mural-fusion-pichwai-lippan-2.jpg",
-      "/mural-fusion-pichwai-lippan-3.jpg"
+      "/mural-fusion-pichwai-lippan-2.jpg"
     ],
     size: "6sqft x 4sqft",
     price: null,
@@ -60,9 +60,9 @@ const INITIAL_ARTWORKS = [
     category: "Mural Art",
     title: "Botanical Geometry",
     images: [
+      "/mural-botanical-geometry-3.jpg",
       "/mural-botanical-geometry-1.jpg",
-      "/mural-botanical-geometry-2.jpg",
-      "/mural-botanical-geometry-3.jpg"
+      "/mural-botanical-geometry-2.jpg"
     ],
     size: null,
     price: null,
@@ -75,8 +75,8 @@ const INITIAL_ARTWORKS = [
     category: "Mural Art",
     title: "Windows of Wonder",
     images: [
-      "/mural-windows-of-wonder-1.jpg",
       "/mural-windows-of-wonder-2.jpg",
+      "/mural-windows-of-wonder-1.jpg",
       "/mural-windows-of-wonder-3.jpg",
       "/mural-windows-of-wonder-4.jpg"
     ],
