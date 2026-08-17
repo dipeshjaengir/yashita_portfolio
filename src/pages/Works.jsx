@@ -321,7 +321,19 @@ export default function Works({ setCurrentPage }) {
     setActiveImageIndex(0);
   };
 
-  const categories = ['All', 'Mural Art', 'Expression Art', 'Faceless Art', 'Custom Artwork'];
+  const categories = [
+    'All',
+    'Mural Art',
+    'Expression Art',
+    'Faceless Art',
+    'Custom Artwork',
+    '3D Art',
+    'Art That Moves',
+    'Custom Canvas Painting',
+    'Fabric Painting',
+    'For Sale',
+    'Photograph Painting'
+  ];
 
   const filteredArtworks = selectedCategory === 'All'
     ? INITIAL_ARTWORKS
