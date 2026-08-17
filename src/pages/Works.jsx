@@ -259,6 +259,35 @@ const INITIAL_ARTWORKS = [
     medium: null,
     description: null,
     imageRatio: "portrait"
+  },
+  {
+    id: 19,
+    category: "3D Art",
+    title: "The Golden Passage",
+    images: [
+      "/3D art/The Golden Passage/golden-passage-1.jpg",
+      "/3D art/The Golden Passage/golden-passage-2.jpg"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "square"
+  },
+  {
+    id: 20,
+    category: "3D Art",
+    title: "Treasured Moments",
+    images: [
+      "/3D art/Treasured Moments/treasured-moments-1.jpg",
+      "/3D art/Treasured Moments/treasured-moments-2.jpg",
+      "/3D art/Treasured Moments/treasured-moments-3.jpg"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "portrait"
   }
 ];
 
