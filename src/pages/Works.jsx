@@ -378,13 +378,13 @@ const INITIAL_ARTWORKS = [
     category: "Custom Canvas Painting",
     title: "A Journey Inward",
     images: [
-      "/custom canvas painting/journey-inward-1.png"
+      "/custom canvas painting/journey-inward-1.jpg"
     ],
     size: null,
     price: null,
     medium: null,
     description: null,
-    imageRatio: "square"
+    imageRatio: "portrait"
   }
 ];
 
