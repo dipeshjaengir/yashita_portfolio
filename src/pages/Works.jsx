@@ -344,6 +344,47 @@ const INITIAL_ARTWORKS = [
     medium: null,
     description: null,
     imageRatio: "portrait"
+  },
+  {
+    id: 25,
+    category: "Custom Canvas Painting",
+    title: "Painted Melodies",
+    images: [
+      "/custom canvas painting/painted-melodies-1.png",
+      "/custom canvas painting/painted-melodies-2.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "portrait"
+  },
+  {
+    id: 26,
+    category: "Custom Canvas Painting",
+    title: "Canvas Painting",
+    images: [
+      "/custom canvas painting/canvas-painting-1.png",
+      "/custom canvas painting/canvas-painting-2.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "square"
+  },
+  {
+    id: 27,
+    category: "Custom Canvas Painting",
+    title: "A Journey Inward",
+    images: [
+      "/custom canvas painting/journey-inward-1.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "square"
   }
 ];
 
