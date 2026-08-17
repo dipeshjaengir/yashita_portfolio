@@ -288,6 +288,62 @@ const INITIAL_ARTWORKS = [
     medium: null,
     description: null,
     imageRatio: "portrait"
+  },
+  {
+    id: 21,
+    category: "Charcoal Art",
+    title: null,
+    images: [
+      "/Charcoal Art/charcoal-art-1a.jpg",
+      "/Charcoal Art/charcoal-art-1b.jpg"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "square"
+  },
+  {
+    id: 22,
+    category: "Charcoal Art",
+    title: null,
+    images: [
+      "/Charcoal Art/charcoal-art-2a.jpg",
+      "/Charcoal Art/charcoal-art-2b.jpg"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "square"
+  },
+  {
+    id: 23,
+    category: "Charcoal Art",
+    title: null,
+    images: [
+      "/Charcoal Art/charcoal-art-3a.jpg",
+      "/Charcoal Art/charcoal-art-3b.jpg"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "square"
+  },
+  {
+    id: 24,
+    category: "Charcoal Art",
+    title: null,
+    images: [
+      "/Charcoal Art/charcoal-art-4a.jpg",
+      "/Charcoal Art/charcoal-art-4b.jpg"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "portrait"
   }
 ];
 
@@ -332,7 +388,8 @@ export default function Works({ setCurrentPage }) {
     'Custom Canvas Painting',
     'Fabric Painting',
     'For Sale',
-    'Photograph Painting'
+    'Photograph Painting',
+    'Charcoal Art'
   ];
 
   const filteredArtworks = selectedCategory === 'All'
