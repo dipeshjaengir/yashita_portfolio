@@ -528,6 +528,23 @@ const INITIAL_ARTWORKS = [
     medium: null,
     description: null,
     imageRatio: "portrait"
+  },
+  {
+    id: 37,
+    category: "For Sale",
+    title: null,
+    images: [
+      "/For sale/for-sale-2a.png",
+      "/For sale/for-sale-2b.png",
+      "/For sale/for-sale-2c.png",
+      "/For sale/for-sale-2d.png",
+      "/For sale/for-sale-2e.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "portrait"
   }
 ];
 
