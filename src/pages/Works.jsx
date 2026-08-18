@@ -76,9 +76,9 @@ const INITIAL_ARTWORKS = [
     title: "Windows of Wonder",
     images: [
       "/mural-windows-of-wonder-2.jpg",
-      "/mural-windows-of-wonder-1.jpg",
       "/mural-windows-of-wonder-3.jpg",
-      "/mural-windows-of-wonder-4.jpg"
+      "/mural-windows-of-wonder-4.jpg",
+      "/mural-windows-of-wonder-1.jpg"
     ],
     size: "5sqft x 4sqft",
     price: null,
@@ -100,13 +100,30 @@ const INITIAL_ARTWORKS = [
     imageRatio: "landscape"
   },
   {
+    id: 93,
+    category: "Mural Art",
+    title: "Reflections of awakening",
+    images: [
+      "/Mural Art/reflections-awakening-1a.png",
+      "/Mural Art/reflections-awakening-1b.png",
+      "/Mural Art/reflections-awakening-1c.png",
+      "/Mural Art/reflections-awakening-1d.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "portrait"
+  },
+  {
     id: 11,
     category: "Canvas Painting",
     subcategory: "Expression Art",
     title: null,
     images: [
-      "/canvas-expression-art-1a.jpg",
-      "/canvas-expression-art-1b.jpg"
+      "/canvas-expression-art-1b.jpg",
+      "/canvas-expression-art-1a.jpg"
+      
     ],
     size: null,
     price: null,
@@ -120,8 +137,23 @@ const INITIAL_ARTWORKS = [
     subcategory: "Expression Art",
     title: null,
     images: [
-      "/canvas-expression-art-2a.jpg",
-      "/canvas-expression-art-2b.jpg"
+      "/canvas-expression-art-2b.jpg",
+      "/canvas-expression-art-2a.jpg"   
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "portrait"
+  },
+  {
+    id: 14,
+    category: "Canvas Painting",
+    subcategory: "Faceless Art",
+    title: null,
+    images: [
+      "/faceless-art-2b.jpg",
+      "/faceless-art-2a.jpg",
     ],
     size: null,
     price: null,
@@ -146,13 +178,13 @@ const INITIAL_ARTWORKS = [
     imageRatio: "portrait"
   },
   {
-    id: 14,
+    id: 17,
     category: "Canvas Painting",
     subcategory: "Faceless Art",
     title: null,
     images: [
-      "/faceless-art-2b.jpg",
-      "/faceless-art-2a.jpg",
+      "/faceless-art-5a.jpg",
+      "/faceless-art-5b.jpg"
     ],
     size: null,
     price: null,
@@ -183,21 +215,6 @@ const INITIAL_ARTWORKS = [
     images: [
       "/faceless-art-3b.jpg",
       "/faceless-art-4a.jpg"      
-    ],
-    size: null,
-    price: null,
-    medium: null,
-    description: null,
-    imageRatio: "portrait"
-  },
-  {
-    id: 17,
-    category: "Canvas Painting",
-    subcategory: "Faceless Art",
-    title: null,
-    images: [
-      "/faceless-art-5a.jpg",
-      "/faceless-art-5b.jpg"
     ],
     size: null,
     price: null,
@@ -250,18 +267,18 @@ const INITIAL_ARTWORKS = [
     imageRatio: "portrait"
   },
   {
-    id: 21,
+    id: 24,
     category: "Charcoal Art",
     title: null,
     images: [
-      "/Charcoal Art/charcoal-art-1a.jpg",
-      "/Charcoal Art/charcoal-art-1b.jpg"
+      "/Charcoal Art/charcoal-art-4a.jpg",
+      "/Charcoal Art/charcoal-art-4b.jpg"
     ],
     size: null,
     price: null,
     medium: null,
     description: null,
-    imageRatio: "square"
+    imageRatio: "portrait"
   },
   {
     id: 22,
@@ -292,26 +309,26 @@ const INITIAL_ARTWORKS = [
     imageRatio: "square"
   },
   {
-    id: 24,
+    id: 21,
     category: "Charcoal Art",
     title: null,
     images: [
-      "/Charcoal Art/charcoal-art-4a.jpg",
-      "/Charcoal Art/charcoal-art-4b.jpg"
+      "/Charcoal Art/charcoal-art-1a.jpg",
+      "/Charcoal Art/charcoal-art-1b.jpg"
     ],
     size: null,
     price: null,
     medium: null,
     description: null,
-    imageRatio: "portrait"
+    imageRatio: "square"
   },
   {
     id: 25,
-    category: "Custom Canvas Painting",
+    category: "Customised Painting",
     title: "A Journey Inward",
     images: [
       "/custom canvas painting/painted-melodies-1.png",
-      "/custom canvas painting/painted-melodies-2.png"
+      "/custom canvas painting/journey-inward-2.png"
     ],
     size: null,
     price: null,
@@ -321,79 +338,18 @@ const INITIAL_ARTWORKS = [
   },
   {
     id: 26,
-    category: "Custom Canvas Painting",
+    category: "Customised Painting",
     title: "Canvas Painting",
     images: [
-      "/custom canvas painting/canvas-painting-1.png",
-      "/custom canvas painting/canvas-painting-2.png"
+      "/custom canvas painting/canvas-painting-2.png",
+      "/custom canvas painting/canvas-painting-1.png"
+      
     ],
     size: null,
     price: null,
     medium: null,
     description: null,
     imageRatio: "square"
-  },
-  {
-    id: 28,
-    category: "Fabric Painting",
-    title: "Draped in feathers",
-    images: [
-      "/Fabric painting/fabric-painting-1a.png",
-      "/Fabric painting/fabric-painting-1b.png",
-      "/Fabric painting/fabric-painting-1c.png"
-    ],
-    size: null,
-    price: null,
-    medium: null,
-    description: null,
-    imageRatio: "portrait"
-  },
-  {
-    id: 29,
-    category: "Fabric Painting",
-    title: "Inner Words",
-    images: [
-      "/Fabric painting/fabric-painting-2a.png",
-      "/Fabric painting/fabric-painting-2b.png",
-      "/Fabric painting/fabric-painting-2c.png",
-      "/Fabric painting/fabric-painting-2d.png"
-    ],
-    size: null,
-    price: null,
-    medium: null,
-    description: null,
-    imageRatio: "portrait"
-  },
-  {
-    id: 30,
-    category: "Fabric Painting",
-    title: "Monday moods with donald",
-    images: [
-      "/Fabric painting/fabric-painting-3a.png",
-      "/Fabric painting/fabric-painting-3b.png",
-      "/Fabric painting/fabric-painting-3c.png"
-    ],
-    size: null,
-    price: null,
-    medium: null,
-    description: null,
-    imageRatio: "portrait"
-  },
-  {
-    id: 31,
-    category: "Fabric Painting",
-    title: "Palette of kindness",
-    images: [
-      "/Fabric painting/fabric-painting-5a.png",
-      "/Fabric painting/fabric-painting-5b.png",
-      "/Fabric painting/fabric-painting-5c.png",
-      "/Fabric painting/fabric-painting-5d.png"
-    ],
-    size: null,
-    price: null,
-    medium: null,
-    description: null,
-    imageRatio: "portrait"
   },
   {
     id: 32,
@@ -411,9 +367,41 @@ const INITIAL_ARTWORKS = [
     imageRatio: "portrait"
   },
   {
+    id: 34,
+    category: "Fabric Painting",
+    title: "Wings of Hamsini",
+    images: [
+      "/Fabric painting/fabric-painting-8a.png",
+      "/Fabric painting/fabric-painting-8b.png",
+      "/Fabric painting/fabric-painting-8c.png",
+      "/Fabric painting/fabric-painting-8d.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "portrait"
+  },
+  {
+    id: 31,
+    category: "Fabric Painting",
+    title: "Palette of Kindness",
+    images: [
+      "/Fabric painting/fabric-painting-5a.png",
+      "/Fabric painting/fabric-painting-5b.png",
+      "/Fabric painting/fabric-painting-5c.png",
+      "/Fabric painting/fabric-painting-5d.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "portrait"
+  },
+  {
     id: 33,
     category: "Fabric Painting",
-    title: "Tribute in red",
+    title: "Tribute in Red",
     images: [
       "/Fabric painting/fabric-painting-7a.png",
       "/Fabric painting/fabric-painting-7b.png",
@@ -427,14 +415,60 @@ const INITIAL_ARTWORKS = [
     imageRatio: "portrait"
   },
   {
-    id: 34,
+    id: 30,
     category: "Fabric Painting",
-    title: "Wings of Hamsini",
+    title: "Monday Moods with Donald",
     images: [
-      "/Fabric painting/fabric-painting-8a.png",
-      "/Fabric painting/fabric-painting-8b.png",
-      "/Fabric painting/fabric-painting-8c.png",
-      "/Fabric painting/fabric-painting-8d.png"
+      "/Fabric painting/fabric-painting-3a.png",
+      "/Fabric painting/fabric-painting-3b.png",
+      "/Fabric painting/fabric-painting-3c.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "portrait"
+  },
+  {
+    id: 28,
+    category: "Fabric Painting",
+    title: "Draped in Feathers",
+    images: [
+      "/Fabric painting/fabric-painting-1a.png",
+      "/Fabric painting/fabric-painting-1b.png",
+      "/Fabric painting/fabric-painting-1c.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "portrait"
+  },
+  {
+    id: 29,
+    category: "Fabric Painting",
+    title: "Inner Worlds",
+    images: [
+      "/Fabric painting/fabric-painting-2a.png",
+      "/Fabric painting/fabric-painting-2b.png",
+      "/Fabric painting/fabric-painting-2c.png",
+      "/Fabric painting/fabric-painting-2d.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "portrait"
+  },
+  {
+    id: 54,
+    category: "Fabric Painting",
+    title: "Vibrant Kingdom",
+    images: [
+      "/Fabric painting/fabric-painting-9a.png",
+      "/Fabric painting/fabric-painting-9b.png",
+      "/Fabric painting/fabric-painting-9c.png",
+      "/Fabric painting/fabric-painting-9d.png"
     ],
     size: null,
     price: null,
@@ -481,8 +515,8 @@ const INITIAL_ARTWORKS = [
     category: "For Sale",
     title: "The dot clock",
     images: [
-      "/For sale/for-sale-2a.png",
       "/For sale/for-sale-2b.png",
+      "/For sale/for-sale-2a.png",
       "/For sale/for-sale-2c.png",
       "/For sale/for-sale-2d.png",
       "/For sale/for-sale-2e.png"
@@ -492,6 +526,19 @@ const INITIAL_ARTWORKS = [
     medium: null,
     description: null,
     imageRatio: "portrait"
+  },
+  {
+    id: 94,
+    category: "For Sale",
+    title: null,
+    images: [
+      "/For sale/for-sale-3.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "square"
   },
   {
     id: 38,
@@ -649,7 +696,7 @@ const INITIAL_ARTWORKS = [
   },
   {
     id: 49,
-    category: "Pichwai",
+    category: "Pichwai Art",
     title: null,
     images: [
       "/Pichwai/pichwai-1a.jpg",
@@ -663,7 +710,7 @@ const INITIAL_ARTWORKS = [
   },
   {
     id: 50,
-    category: "Pichwai",
+    category: "Pichwai Art",
     title: null,
     images: [
       "/Pichwai/pichwai-2a.jpg",
@@ -676,22 +723,8 @@ const INITIAL_ARTWORKS = [
     imageRatio: "square"
   },
   {
-    id: 51,
-    category: "Pichwai",
-    title: null,
-    images: [
-      "/Pichwai/pichwai-3a.png",
-      "/Pichwai/pichwai-3b.png"
-    ],
-    size: null,
-    price: null,
-    medium: null,
-    description: null,
-    imageRatio: "portrait"
-  },
-  {
     id: 52,
-    category: "Pichwai",
+    category: "Pichwai Art",
     title: null,
     images: [
       "/Pichwai/pichwai-4a.jpg",
@@ -702,6 +735,20 @@ const INITIAL_ARTWORKS = [
     medium: null,
     description: null,
     imageRatio: "square"
+  },
+  {
+    id: 51,
+    category: "Pichwai Art",
+    title: null,
+    images: [
+      "/Pichwai/pichwai-3a.png",
+      "/Pichwai/pichwai-3b.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "portrait"
   },
   {
     id: 53,
@@ -717,25 +764,10 @@ const INITIAL_ARTWORKS = [
     description: null,
     imageRatio: "square"
   },
-  {
-    id: 54,
-    category: "Fabric Painting",
-    title: "Vibrant Kingdom",
-    images: [
-      "/Fabric painting/fabric-painting-9a.png",
-      "/Fabric painting/fabric-painting-9b.png",
-      "/Fabric painting/fabric-painting-9c.png",
-      "/Fabric painting/fabric-painting-9d.png"
-    ],
-    size: null,
-    price: null,
-    medium: null,
-    description: null,
-    imageRatio: "portrait"
-  },
+
   {
     id: 55,
-    category: "Custom Canvas Painting",
+    category: "Customised Painting",
     title: "Painted Melodies — Sunflowers",
     images: [
       "/custom canvas painting/journey-inward-1.png",
@@ -774,7 +806,7 @@ const INITIAL_ARTWORKS = [
     price: null,
     medium: null,
     description: null,
-    imageRatio: "portrait"
+    imageRatio: "square"
   },
   {
     id: 58,
@@ -988,7 +1020,7 @@ const INITIAL_ARTWORKS = [
   },
   {
     id: 73,
-    category: "Water Painting",
+    category: "Watercolour Painting",
     title: null,
     images: [
       "/Water Painting/water-painting-1a.png",
@@ -1002,7 +1034,7 @@ const INITIAL_ARTWORKS = [
   },
   {
     id: 74,
-    category: "Water Painting",
+    category: "Watercolour Painting",
     title: null,
     images: [
       "/Water Painting/water-painting-2a.png",
@@ -1016,7 +1048,7 @@ const INITIAL_ARTWORKS = [
   },
   {
     id: 75,
-    category: "Water Painting",
+    category: "Watercolour Painting",
     title: null,
     images: [
       "/Water Painting/water-painting-3a.png",
@@ -1030,7 +1062,7 @@ const INITIAL_ARTWORKS = [
   },
   {
     id: 76,
-    category: "Water Painting",
+    category: "Watercolour Painting",
     title: null,
     images: [
       "/Water Painting/water-painting-4a.png",
@@ -1044,7 +1076,7 @@ const INITIAL_ARTWORKS = [
   },
   {
     id: 77,
-    category: "Water Painting",
+    category: "Watercolour Painting",
     title: null,
     images: [
       "/Water Painting/water-painting-5a.png",
@@ -1058,7 +1090,7 @@ const INITIAL_ARTWORKS = [
   },
   {
     id: 78,
-    category: "Water Painting",
+    category: "Watercolour Painting",
     title: null,
     images: [
       "/Water Painting/water-painting-6a.png",
@@ -1072,7 +1104,7 @@ const INITIAL_ARTWORKS = [
   },
   {
     id: 79,
-    category: "Water Painting",
+    category: "Watercolour Painting",
     title: null,
     images: [
       "/Water Painting/water-painting-7a.png",
@@ -1086,7 +1118,7 @@ const INITIAL_ARTWORKS = [
   },
   {
     id: 80,
-    category: "Water Painting",
+    category: "Watercolour Painting",
     title: null,
     images: [
       "/Water Painting/water-painting-8a.png",
@@ -1100,7 +1132,7 @@ const INITIAL_ARTWORKS = [
   },
   {
     id: 81,
-    category: "Water Painting",
+    category: "Watercolour Painting",
     title: null,
     images: [
       "/Water Painting/water-painting-9a.png",
@@ -1114,7 +1146,7 @@ const INITIAL_ARTWORKS = [
   },
   {
     id: 82,
-    category: "Water Painting",
+    category: "Watercolour Painting",
     title: null,
     images: [
       "/Water Painting/water-painting-10a.png",
@@ -1128,7 +1160,7 @@ const INITIAL_ARTWORKS = [
   },
   {
     id: 83,
-    category: "Water Painting",
+    category: "Watercolour Painting",
     title: null,
     images: [
       "/Water Painting/water-painting-11a.png",
@@ -1142,7 +1174,7 @@ const INITIAL_ARTWORKS = [
   },
   {
     id: 84,
-    category: "Water Painting",
+    category: "Watercolour Painting",
     title: null,
     images: [
       "/Water Painting/water-painting-12a.png",
@@ -1156,7 +1188,7 @@ const INITIAL_ARTWORKS = [
   },
   {
     id: 85,
-    category: "Color Pencil Shading",
+    category: "Colour Pencil Shading",
     title: null,
     images: [
       "/Color Pencil Shading/color-pencil-shading-1a.png",
@@ -1170,7 +1202,7 @@ const INITIAL_ARTWORKS = [
   },
   {
     id: 86,
-    category: "Color Pencil Shading",
+    category: "Colour Pencil Shading",
     title: null,
     images: [
       "/Color Pencil Shading/color-pencil-shading-2a.png",
@@ -1314,27 +1346,27 @@ export default function Works({ setCurrentPage }) {
   const categories = [
     'All',
     'Mural Art',
+    'For Sale',
     'Expression Art',
     'Faceless Art',
-    '3D Art',
-    'Art That Moves',
-    'Custom Canvas Painting',
+    'Customised Painting',
     'Fabric Painting',
-    'For Sale',
-    'Charcoal Art',
     'Knife Art',
+    'Thread Art',
+    'Watercolour Painting',
+    '3D Art',
+    'Dot Painting',
+    'Art That Moves',
+    'Charcoal Art',
+    'Pichwai Art',
     'Marble Art',
-    'Pichwai',
+    'Poster Painting',
+    'Doodle Art',
     'Wax Painting',
+    'Soft Pastels',
+    'Colour Pencil Shading',
     'Pencil Shading',
     'Line Art',
-    'Poster Painting',
-    'Soft Pastels',
-    'Thread Art',
-    'Water Painting',
-    'Color Pencil Shading',
-    'Doodle Art',
-    'Dot Painting',
     'Exploration'
   ];
 
