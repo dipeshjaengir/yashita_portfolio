@@ -747,6 +747,521 @@ const INITIAL_ARTWORKS = [
     medium: null,
     description: null,
     imageRatio: "portrait"
+  },
+  {
+    id: 56,
+    category: "Line Art",
+    title: null,
+    images: [
+      "/Line Art/line-art-1a.png",
+      "/Line Art/line-art-1b.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "square"
+  },
+  {
+    id: 57,
+    category: "Line Art",
+    title: null,
+    images: [
+      "/Line Art/line-art-2a.png",
+      "/Line Art/line-art-2b.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "portrait"
+  },
+  {
+    id: 58,
+    category: "Line Art",
+    title: null,
+    images: [
+      "/Line Art/line-art-3a.png",
+      "/Line Art/line-art-3b.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "square"
+  },
+  {
+    id: 59,
+    category: "Line Art",
+    title: null,
+    images: [
+      "/Line Art/line-art-4a.png",
+      "/Line Art/line-art-4b.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "square"
+  },
+  {
+    id: 60,
+    category: "Poster Painting",
+    title: null,
+    images: [
+      "/Poster Painting/poster-painting-1a.png",
+      "/Poster Painting/poster-painting-1b.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "square"
+  },
+  {
+    id: 61,
+    category: "Poster Painting",
+    title: null,
+    images: [
+      "/Poster Painting/poster-painting-2a.png",
+      "/Poster Painting/poster-painting-2b.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "square"
+  },
+  {
+    id: 62,
+    category: "Poster Painting",
+    title: null,
+    images: [
+      "/Poster Painting/poster-painting-3a.png",
+      "/Poster Painting/poster-painting-3b.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "square"
+  },
+  {
+    id: 63,
+    category: "Poster Painting",
+    title: null,
+    images: [
+      "/Poster Painting/poster-painting-4a.png",
+      "/Poster Painting/poster-painting-4b.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "landscape"
+  },
+  {
+    id: 64,
+    category: "Poster Painting",
+    title: null,
+    images: [
+      "/Poster Painting/poster-painting-5a.png",
+      "/Poster Painting/poster-painting-5b.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "portrait"
+  },
+  {
+    id: 65,
+    category: "Poster Painting",
+    title: null,
+    images: [
+      "/Poster Painting/poster-painting-6a.png",
+      "/Poster Painting/poster-painting-6b.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "square"
+  },
+  {
+    id: 66,
+    category: "Poster Painting",
+    title: null,
+    images: [
+      "/Poster Painting/poster-painting-7a.png",
+      "/Poster Painting/poster-painting-7b.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "portrait"
+  },
+  {
+    id: 67,
+    category: "Poster Painting",
+    title: null,
+    images: [
+      "/Poster Painting/poster-painting-8a.png",
+      "/Poster Painting/poster-painting-8b.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "landscape"
+  },
+  {
+    id: 68,
+    category: "Poster Painting",
+    title: null,
+    images: [
+      "/Poster Painting/poster-painting-9a.png",
+      "/Poster Painting/poster-painting-9b.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "portrait"
+  },
+  {
+    id: 69,
+    category: "Poster Painting",
+    title: null,
+    images: [
+      "/Poster Painting/poster-painting-10a.png",
+      "/Poster Painting/poster-painting-10b.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "landscape"
+  },
+  {
+    id: 70,
+    category: "Poster Painting",
+    title: null,
+    images: [
+      "/Poster Painting/poster-painting-11a.png",
+      "/Poster Painting/poster-painting-11b.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "portrait"
+  },
+  {
+    id: 71,
+    category: "Soft Pastels",
+    title: null,
+    images: [
+      "/Soft Pastels/soft-pastels-1a.png",
+      "/Soft Pastels/soft-pastels-1b.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "square"
+  },
+  {
+    id: 72,
+    category: "Thread Art",
+    title: null,
+    images: [
+      "/Thread Art/thread-art-1a.png",
+      "/Thread Art/thread-art-1b.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "square"
+  },
+  {
+    id: 73,
+    category: "Water Painting",
+    title: null,
+    images: [
+      "/Water Painting/water-painting-1a.png",
+      "/Water Painting/water-painting-1b.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "portrait"
+  },
+  {
+    id: 74,
+    category: "Water Painting",
+    title: null,
+    images: [
+      "/Water Painting/water-painting-2a.png",
+      "/Water Painting/water-painting-2b.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "portrait"
+  },
+  {
+    id: 75,
+    category: "Water Painting",
+    title: null,
+    images: [
+      "/Water Painting/water-painting-3a.png",
+      "/Water Painting/water-painting-3b.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "portrait"
+  },
+  {
+    id: 76,
+    category: "Water Painting",
+    title: null,
+    images: [
+      "/Water Painting/water-painting-4a.png",
+      "/Water Painting/water-painting-4b.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "portrait"
+  },
+  {
+    id: 77,
+    category: "Water Painting",
+    title: null,
+    images: [
+      "/Water Painting/water-painting-5a.png",
+      "/Water Painting/water-painting-5b.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "portrait"
+  },
+  {
+    id: 78,
+    category: "Water Painting",
+    title: null,
+    images: [
+      "/Water Painting/water-painting-6a.png",
+      "/Water Painting/water-painting-6b.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "portrait"
+  },
+  {
+    id: 79,
+    category: "Water Painting",
+    title: null,
+    images: [
+      "/Water Painting/water-painting-7a.png",
+      "/Water Painting/water-painting-7b.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "portrait"
+  },
+  {
+    id: 80,
+    category: "Water Painting",
+    title: null,
+    images: [
+      "/Water Painting/water-painting-8a.png",
+      "/Water Painting/water-painting-8b.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "portrait"
+  },
+  {
+    id: 81,
+    category: "Water Painting",
+    title: null,
+    images: [
+      "/Water Painting/water-painting-9a.png",
+      "/Water Painting/water-painting-9b.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "portrait"
+  },
+  {
+    id: 82,
+    category: "Water Painting",
+    title: null,
+    images: [
+      "/Water Painting/water-painting-10a.png",
+      "/Water Painting/water-painting-10b.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "portrait"
+  },
+  {
+    id: 83,
+    category: "Water Painting",
+    title: null,
+    images: [
+      "/Water Painting/water-painting-11a.png",
+      "/Water Painting/water-painting-11b.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "portrait"
+  },
+  {
+    id: 84,
+    category: "Water Painting",
+    title: null,
+    images: [
+      "/Water Painting/water-painting-12a.png",
+      "/Water Painting/water-painting-12b.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "portrait"
+  },
+  {
+    id: 85,
+    category: "Color Pencil Shading",
+    title: null,
+    images: [
+      "/Color Pencil Shading/color-pencil-shading-1a.png",
+      "/Color Pencil Shading/color-pencil-shading-1b.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "square"
+  },
+  {
+    id: 86,
+    category: "Color Pencil Shading",
+    title: null,
+    images: [
+      "/Color Pencil Shading/color-pencil-shading-2a.png",
+      "/Color Pencil Shading/color-pencil-shading-2b.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "landscape"
+  },
+  {
+    id: 87,
+    category: "Doodle Art",
+    title: null,
+    images: [
+      "/Doodle Art/doodle-art-1a.png",
+      "/Doodle Art/doodle-art-1b.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "portrait"
+  },
+  {
+    id: 88,
+    category: "Doodle Art",
+    title: null,
+    images: [
+      "/Doodle Art/doodle-art-2a.png",
+      "/Doodle Art/doodle-art-2b.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "portrait"
+  },
+  {
+    id: 89,
+    category: "Dot Painting",
+    title: null,
+    images: [
+      "/Dot Painting/dot-painting-1a.png",
+      "/Dot Painting/dot-painting-1b.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "square"
+  },
+  {
+    id: 90,
+    category: "Exploration",
+    title: null,
+    images: [
+      "/Exploration/exploration-1.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "landscape"
+  },
+  {
+    id: 91,
+    category: "Exploration",
+    title: null,
+    images: [
+      "/Exploration/exploration-2.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "portrait"
+  },
+  {
+    id: 92,
+    category: "Exploration",
+    title: null,
+    images: [
+      "/Exploration/exploration-3.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "portrait"
   }
 ];
 
@@ -811,7 +1326,16 @@ export default function Works({ setCurrentPage }) {
     'Marble Art',
     'Pichwai',
     'Wax Painting',
-    'Pencil Shading'
+    'Pencil Shading',
+    'Line Art',
+    'Poster Painting',
+    'Soft Pastels',
+    'Thread Art',
+    'Water Painting',
+    'Color Pencil Shading',
+    'Doodle Art',
+    'Dot Painting',
+    'Exploration'
   ];
 
   const filteredArtworks = selectedCategory === 'All'
