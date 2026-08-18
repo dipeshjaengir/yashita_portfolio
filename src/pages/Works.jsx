@@ -699,6 +699,62 @@ const INITIAL_ARTWORKS = [
     medium: null,
     description: null,
     imageRatio: "square"
+  },
+  {
+    id: 49,
+    category: "Pichwai",
+    title: null,
+    images: [
+      "/Pichwai/pichwai-1a.jpg",
+      "/Pichwai/pichwai-1b.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "square"
+  },
+  {
+    id: 50,
+    category: "Pichwai",
+    title: null,
+    images: [
+      "/Pichwai/pichwai-2a.jpg",
+      "/Pichwai/pichwai-2b.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "square"
+  },
+  {
+    id: 51,
+    category: "Pichwai",
+    title: null,
+    images: [
+      "/Pichwai/pichwai-3a.png",
+      "/Pichwai/pichwai-3b.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "portrait"
+  },
+  {
+    id: 52,
+    category: "Pichwai",
+    title: null,
+    images: [
+      "/Pichwai/pichwai-4a.jpg",
+      "/Pichwai/pichwai-4b.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "square"
   }
 ];
 
