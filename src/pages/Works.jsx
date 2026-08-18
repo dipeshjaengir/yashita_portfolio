@@ -559,6 +559,90 @@ const INITIAL_ARTWORKS = [
     medium: null,
     description: null,
     imageRatio: "square"
+  },
+  {
+    id: 39,
+    category: "Marble Art",
+    title: null,
+    images: [
+      "/Marble Art/marble-art-1a.png",
+      "/Marble Art/marble-art-1b.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "square"
+  },
+  {
+    id: 40,
+    category: "Marble Art",
+    title: null,
+    images: [
+      "/Marble Art/marble-art-2a.png",
+      "/Marble Art/marble-art-2b.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "portrait"
+  },
+  {
+    id: 41,
+    category: "Marble Art",
+    title: null,
+    images: [
+      "/Marble Art/marble-art-3a.png",
+      "/Marble Art/marble-art-3b.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "square"
+  },
+  {
+    id: 42,
+    category: "Marble Art",
+    title: null,
+    images: [
+      "/Marble Art/marble-art-4a.png",
+      "/Marble Art/marble-art-4b.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "portrait"
+  },
+  {
+    id: 43,
+    category: "Marble Art",
+    title: null,
+    images: [
+      "/Marble Art/marble-art-5a.png",
+      "/Marble Art/marble-art-5b.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "portrait"
+  },
+  {
+    id: 44,
+    category: "Marble Art",
+    title: null,
+    images: [
+      "/Marble Art/marble-art-6a.png",
+      "/Marble Art/marble-art-6b.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "portrait"
   }
 ];
 
