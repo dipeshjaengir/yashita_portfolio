@@ -545,6 +545,20 @@ const INITIAL_ARTWORKS = [
     medium: null,
     description: null,
     imageRatio: "portrait"
+  },
+  {
+    id: 38,
+    category: "Knife Art",
+    title: null,
+    images: [
+      "/Knife Art/knife-art-1a.png",
+      "/Knife Art/knife-art-1b.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "square"
   }
 ];
 
