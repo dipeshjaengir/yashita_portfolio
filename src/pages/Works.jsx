@@ -590,7 +590,12 @@ export default function Works({ setCurrentPage }) {
     'Fabric Painting',
     'For Sale',
     'Photograph Painting',
-    'Charcoal Art'
+    'Charcoal Art',
+    'Knife Art',
+    'Marble Art',
+    'Pichwai',
+    'Wax Painting',
+    'Pencil Shading'
   ];
 
   const filteredArtworks = selectedCategory === 'All'
