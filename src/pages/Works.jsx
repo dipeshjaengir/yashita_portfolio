@@ -755,6 +755,20 @@ const INITIAL_ARTWORKS = [
     medium: null,
     description: null,
     imageRatio: "square"
+  },
+  {
+    id: 53,
+    category: "Wax Painting",
+    title: null,
+    images: [
+      "/Wax Painting/wax-painting-1a.png",
+      "/Wax Painting/wax-painting-1b.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "square"
   }
 ];
 
