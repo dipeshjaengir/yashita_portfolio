@@ -785,6 +785,20 @@ const INITIAL_ARTWORKS = [
     medium: null,
     description: null,
     imageRatio: "portrait"
+  },
+  {
+    id: 55,
+    category: "Custom Canvas Painting",
+    title: "Painted Melodies — Sunflowers",
+    images: [
+      "/custom canvas painting/painted-melodies-sunflowers-1.png",
+      "/custom canvas painting/painted-melodies-sunflowers-2.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "portrait"
   }
 ];
 
