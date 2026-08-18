@@ -120,26 +120,6 @@ const INITIAL_ARTWORKS = [
     imageRatio: "landscape"
   },
   {
-    id: 9,
-    category: "Custom Artwork",
-    title: "Custom Artwork",
-    size: null,
-    price: null,
-    medium: null,
-    description: null,
-    imageRatio: "square"
-  },
-  {
-    id: 10,
-    category: "Custom Artwork",
-    title: "Custom Artwork",
-    size: null,
-    price: null,
-    medium: null,
-    description: null,
-    imageRatio: "square"
-  },
-  {
     id: 11,
     category: "Canvas Painting",
     subcategory: "Expression Art",
@@ -366,19 +346,6 @@ const INITIAL_ARTWORKS = [
     images: [
       "/custom canvas painting/canvas-painting-1.png",
       "/custom canvas painting/canvas-painting-2.png"
-    ],
-    size: null,
-    price: null,
-    medium: null,
-    description: null,
-    imageRatio: "square"
-  },
-  {
-    id: 27,
-    category: "Custom Canvas Painting",
-    title: "Painted Melodies",
-    images: [
-      "/custom canvas painting/journey-inward-1.png"
     ],
     size: null,
     price: null,
@@ -791,6 +758,7 @@ const INITIAL_ARTWORKS = [
     category: "Custom Canvas Painting",
     title: "Painted Melodies — Sunflowers",
     images: [
+      "/custom canvas painting/journey-inward-1.png",
       "/custom canvas painting/painted-melodies-sunflowers-1.png",
       "/custom canvas painting/painted-melodies-sunflowers-2.png"
     ],
@@ -837,13 +805,11 @@ export default function Works({ setCurrentPage }) {
     'Mural Art',
     'Expression Art',
     'Faceless Art',
-    'Custom Artwork',
     '3D Art',
     'Art That Moves',
     'Custom Canvas Painting',
     'Fabric Painting',
     'For Sale',
-    'Photograph Painting',
     'Charcoal Art',
     'Knife Art',
     'Marble Art',
