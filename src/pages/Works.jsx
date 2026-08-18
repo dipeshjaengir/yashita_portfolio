@@ -643,6 +643,62 @@ const INITIAL_ARTWORKS = [
     medium: null,
     description: null,
     imageRatio: "portrait"
+  },
+  {
+    id: 45,
+    category: "Pencil Shading",
+    title: null,
+    images: [
+      "/Pencil Shading/pencil-shading-1a.png",
+      "/Pencil Shading/pencil-shading-1b.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "square"
+  },
+  {
+    id: 46,
+    category: "Pencil Shading",
+    title: null,
+    images: [
+      "/Pencil Shading/pencil-shading-2a.png",
+      "/Pencil Shading/pencil-shading-2b.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "square"
+  },
+  {
+    id: 47,
+    category: "Pencil Shading",
+    title: null,
+    images: [
+      "/Pencil Shading/pencil-shading-3a.png",
+      "/Pencil Shading/pencil-shading-3b.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "square"
+  },
+  {
+    id: 48,
+    category: "Pencil Shading",
+    title: null,
+    images: [
+      "/Pencil Shading/pencil-shading-4a.jpg",
+      "/Pencil Shading/pencil-shading-4b.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "square"
   }
 ];
 
