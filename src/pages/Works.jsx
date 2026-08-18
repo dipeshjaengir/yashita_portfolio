@@ -511,6 +511,23 @@ const INITIAL_ARTWORKS = [
     medium: null,
     description: null,
     imageRatio: "landscape"
+  },
+  {
+    id: 36,
+    category: "For Sale",
+    title: null,
+    images: [
+      "/For sale/for-sale-1a.png",
+      "/For sale/for-sale-1b.png",
+      "/For sale/for-sale-1c.png",
+      "/For sale/for-sale-1d.png",
+      "/For sale/for-sale-1e.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "portrait"
   }
 ];
 
