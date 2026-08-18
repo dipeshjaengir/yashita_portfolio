@@ -100,26 +100,6 @@ const INITIAL_ARTWORKS = [
     imageRatio: "landscape"
   },
   {
-    id: 7,
-    category: "Canvas Painting",
-    title: "Canvas Painting",
-    size: null,
-    price: null,
-    medium: null,
-    description: null,
-    imageRatio: "portrait"
-  },
-  {
-    id: 8,
-    category: "Canvas Painting",
-    title: "Canvas Painting",
-    size: null,
-    price: null,
-    medium: null,
-    description: null,
-    imageRatio: "landscape"
-  },
-  {
     id: 11,
     category: "Canvas Painting",
     subcategory: "Expression Art",
