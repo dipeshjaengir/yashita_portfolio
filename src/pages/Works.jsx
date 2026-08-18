@@ -500,11 +500,11 @@ const INITIAL_ARTWORKS = [
     category: "Art That Moves",
     title: null,
     images: [
-      "/Art That Moves/art-that-moves-1a.png",
-      "/Art That Moves/art-that-moves-1b.png",
-      "/Art That Moves/art-that-moves-1c.png",
-      "/Art That Moves/art-that-moves-1d.png",
-      "/Art That Moves/art-that-moves-1e.png"
+      "/Art that moves/art-that-moves-1a.png",
+      "/Art that moves/art-that-moves-1b.png",
+      "/Art that moves/art-that-moves-1c.png",
+      "/Art that moves/art-that-moves-1d.png",
+      "/Art that moves/art-that-moves-1e.png"
     ],
     size: null,
     price: null,
