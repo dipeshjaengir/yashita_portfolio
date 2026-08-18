@@ -459,6 +459,21 @@ const INITIAL_ARTWORKS = [
     medium: null,
     description: null,
     imageRatio: "portrait"
+  },
+  {
+    id: 33,
+    category: "Fabric Painting",
+    title: null,
+    images: [
+      "/Fabric Painting/fabric-painting-6a.png",
+      "/Fabric Painting/fabric-painting-6b.png",
+      "/Fabric Painting/fabric-painting-6c.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "portrait"
   }
 ];
 
