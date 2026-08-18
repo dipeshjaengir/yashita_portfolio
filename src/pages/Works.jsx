@@ -494,6 +494,23 @@ const INITIAL_ARTWORKS = [
     medium: null,
     description: null,
     imageRatio: "portrait"
+  },
+  {
+    id: 35,
+    category: "Art That Moves",
+    title: null,
+    images: [
+      "/Art That Moves/art-that-moves-1a.png",
+      "/Art That Moves/art-that-moves-1b.png",
+      "/Art That Moves/art-that-moves-1c.png",
+      "/Art That Moves/art-that-moves-1d.png",
+      "/Art That Moves/art-that-moves-1e.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "landscape"
   }
 ];
 
