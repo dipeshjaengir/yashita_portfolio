@@ -116,26 +116,41 @@ export default function Home({ setCurrentPage }) {
             onScroll={handleCarouselScroll}
           >
             <div className="artwork-card" onClick={() => handleNavClick('works')}>
-              <PlaceholderImage aspectRatio="portrait" title="Mural Art" subtitle="Coming Soon" />
+              <PlaceholderImage 
+                aspectRatio="portrait" 
+                title="Windows of Wonder" 
+                subtitle="" 
+                src="/mural-windows-of-wonder-2.jpg" 
+              />
               <div className="artwork-info">
-                <span className="artwork-title">Mural Art</span>
-                <span className="artwork-meta">Collection</span>
+                <span className="artwork-title">Windows of Wonder</span>
+                <span className="artwork-meta">Mural Art</span>
               </div>
             </div>
 
             <div className="artwork-card" onClick={() => handleNavClick('works')}>
-              <PlaceholderImage aspectRatio="square" title="Canvas Painting" subtitle="Coming Soon" />
+              <PlaceholderImage 
+                aspectRatio="square" 
+                title="Expression Art" 
+                subtitle="" 
+                src="/canvas-expression-art-1a.jpg" 
+              />
               <div className="artwork-info">
-                <span className="artwork-title">Canvas Painting</span>
-                <span className="artwork-meta">Collection</span>
+                <span className="artwork-title">Expression Art</span>
+                <span className="artwork-meta">Canvas Painting</span>
               </div>
             </div>
 
             <div className="artwork-card" onClick={() => handleNavClick('works')}>
-              <PlaceholderImage aspectRatio="portrait" title="Custom Artwork" subtitle="Coming Soon" />
+              <PlaceholderImage 
+                aspectRatio="portrait" 
+                title="Vibrant Kingdom" 
+                subtitle="" 
+                src="/Fabric painting/fabric-painting-9a.png" 
+              />
               <div className="artwork-info">
-                <span className="artwork-title">Custom Artwork</span>
-                <span className="artwork-meta">Collection</span>
+                <span className="artwork-title">Vibrant Kingdom</span>
+                <span className="artwork-meta">Fabric Painting</span>
               </div>
             </div>
           </div>
