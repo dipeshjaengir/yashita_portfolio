@@ -4,7 +4,6 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import Works from './pages/Works';
-import Workshops from './pages/Workshops';
 import Contact from './pages/Contact';
 import LoadingScreen from './components/LoadingScreen';
 
@@ -25,7 +24,7 @@ export default function App() {
   useEffect(() => {
     const handleHashChange = () => {
       const hash = window.location.hash.replace('#', '');
-      if (['home', 'about', 'works', 'workshops', 'contact'].includes(hash)) {
+      if (['home', 'about', 'works', 'contact'].includes(hash)) {
         setCurrentPage(hash);
       }
     };
@@ -51,8 +50,6 @@ export default function App() {
         return <About scrollToSection={scrollToSection} setScrollToSection={setScrollToSection} />;
       case 'works':
         return <Works setCurrentPage={handlePageChange} />;
-      case 'workshops':
-        return <Workshops setCurrentPage={handlePageChange} />;
       case 'contact':
         return <Contact />;
       default:

@@ -45,11 +45,6 @@ export default function Footer({ setCurrentPage }) {
                 </a>
               </li>
               <li>
-                <a href="#workshops" onClick={(e) => { e.preventDefault(); handleNavClick('workshops'); }} className="footer-col-link">
-                  Workshops
-                </a>
-              </li>
-              <li>
                 <a href="#contact" onClick={(e) => { e.preventDefault(); handleNavClick('contact'); }} className="footer-col-link">
                   Contact
                 </a>

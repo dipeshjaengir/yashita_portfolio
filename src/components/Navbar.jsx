@@ -12,7 +12,6 @@ export default function Navbar({ currentPage, setCurrentPage }) {
     { id: 'home', label: 'Home' },
     { id: 'about', label: 'About' },
     { id: 'works', label: 'Works' },
-    { id: 'workshops', label: 'Workshops' },
     { id: 'contact', label: 'Contact' }
   ];
 
