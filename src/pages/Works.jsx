@@ -391,9 +391,9 @@ const INITIAL_ARTWORKS = [
     category: "Fabric Painting",
     title: null,
     images: [
-      "/Fabric Painting/fabric-painting-1a.png",
-      "/Fabric Painting/fabric-painting-1b.png",
-      "/Fabric Painting/fabric-painting-1c.png"
+      "/Fabric painting/fabric-painting-1a.png",
+      "/Fabric painting/fabric-painting-1b.png",
+      "/Fabric painting/fabric-painting-1c.png"
     ],
     size: null,
     price: null,
@@ -406,10 +406,10 @@ const INITIAL_ARTWORKS = [
     category: "Fabric Painting",
     title: null,
     images: [
-      "/Fabric Painting/fabric-painting-2a.png",
-      "/Fabric Painting/fabric-painting-2b.png",
-      "/Fabric Painting/fabric-painting-2c.png",
-      "/Fabric Painting/fabric-painting-2d.png"
+      "/Fabric painting/fabric-painting-2a.png",
+      "/Fabric painting/fabric-painting-2b.png",
+      "/Fabric painting/fabric-painting-2c.png",
+      "/Fabric painting/fabric-painting-2d.png"
     ],
     size: null,
     price: null,
@@ -422,9 +422,9 @@ const INITIAL_ARTWORKS = [
     category: "Fabric Painting",
     title: null,
     images: [
-      "/Fabric Painting/fabric-painting-3a.png",
-      "/Fabric Painting/fabric-painting-3b.png",
-      "/Fabric Painting/fabric-painting-3c.png"
+      "/Fabric painting/fabric-painting-3a.png",
+      "/Fabric painting/fabric-painting-3b.png",
+      "/Fabric painting/fabric-painting-3c.png"
     ],
     size: null,
     price: null,
@@ -437,10 +437,10 @@ const INITIAL_ARTWORKS = [
     category: "Fabric Painting",
     title: null,
     images: [
-      "/Fabric Painting/fabric-painting-5a.png",
-      "/Fabric Painting/fabric-painting-5b.png",
-      "/Fabric Painting/fabric-painting-5c.png",
-      "/Fabric Painting/fabric-painting-5d.png"
+      "/Fabric painting/fabric-painting-5a.png",
+      "/Fabric painting/fabric-painting-5b.png",
+      "/Fabric painting/fabric-painting-5c.png",
+      "/Fabric painting/fabric-painting-5d.png"
     ],
     size: null,
     price: null,
@@ -453,9 +453,9 @@ const INITIAL_ARTWORKS = [
     category: "Fabric Painting",
     title: null,
     images: [
-      "/Fabric Painting/fabric-painting-6a.png",
-      "/Fabric Painting/fabric-painting-6b.png",
-      "/Fabric Painting/fabric-painting-6c.png"
+      "/Fabric painting/fabric-painting-6a.png",
+      "/Fabric painting/fabric-painting-6b.png",
+      "/Fabric painting/fabric-painting-6c.png"
     ],
     size: null,
     price: null,
@@ -468,10 +468,10 @@ const INITIAL_ARTWORKS = [
     category: "Fabric Painting",
     title: null,
     images: [
-      "/Fabric Painting/fabric-painting-7a.png",
-      "/Fabric Painting/fabric-painting-7b.png",
-      "/Fabric Painting/fabric-painting-7c.png",
-      "/Fabric Painting/fabric-painting-7d.png"
+      "/Fabric painting/fabric-painting-7a.png",
+      "/Fabric painting/fabric-painting-7b.png",
+      "/Fabric painting/fabric-painting-7c.png",
+      "/Fabric painting/fabric-painting-7d.png"
     ],
     size: null,
     price: null,
@@ -484,10 +484,10 @@ const INITIAL_ARTWORKS = [
     category: "Fabric Painting",
     title: null,
     images: [
-      "/Fabric Painting/fabric-painting-8a.png",
-      "/Fabric Painting/fabric-painting-8b.png",
-      "/Fabric Painting/fabric-painting-8c.png",
-      "/Fabric Painting/fabric-painting-8d.png"
+      "/Fabric painting/fabric-painting-8a.png",
+      "/Fabric painting/fabric-painting-8b.png",
+      "/Fabric painting/fabric-painting-8c.png",
+      "/Fabric painting/fabric-painting-8d.png"
     ],
     size: null,
     price: null,
