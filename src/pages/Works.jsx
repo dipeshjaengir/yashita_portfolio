@@ -348,7 +348,7 @@ const INITIAL_ARTWORKS = [
   {
     id: 25,
     category: "Custom Canvas Painting",
-    title: "Painted Melodies",
+    title: "A Journey Inward",
     images: [
       "/custom canvas painting/painted-melodies-1.png",
       "/custom canvas painting/painted-melodies-2.png"
@@ -376,7 +376,7 @@ const INITIAL_ARTWORKS = [
   {
     id: 27,
     category: "Custom Canvas Painting",
-    title: "A Journey Inward",
+    title: "Painted Melodies",
     images: [
       "/custom canvas painting/journey-inward-1.png"
     ],
@@ -389,7 +389,7 @@ const INITIAL_ARTWORKS = [
   {
     id: 28,
     category: "Fabric Painting",
-    title: null,
+    title: "Draped in feathers",
     images: [
       "/Fabric painting/fabric-painting-1a.png",
       "/Fabric painting/fabric-painting-1b.png",
@@ -404,7 +404,7 @@ const INITIAL_ARTWORKS = [
   {
     id: 29,
     category: "Fabric Painting",
-    title: null,
+    title: "Inner Words",
     images: [
       "/Fabric painting/fabric-painting-2a.png",
       "/Fabric painting/fabric-painting-2b.png",
@@ -420,7 +420,7 @@ const INITIAL_ARTWORKS = [
   {
     id: 30,
     category: "Fabric Painting",
-    title: null,
+    title: "Monday moods with donald",
     images: [
       "/Fabric painting/fabric-painting-3a.png",
       "/Fabric painting/fabric-painting-3b.png",
@@ -435,7 +435,7 @@ const INITIAL_ARTWORKS = [
   {
     id: 31,
     category: "Fabric Painting",
-    title: null,
+    title: "Palette of kindness",
     images: [
       "/Fabric painting/fabric-painting-5a.png",
       "/Fabric painting/fabric-painting-5b.png",
@@ -451,7 +451,7 @@ const INITIAL_ARTWORKS = [
   {
     id: 32,
     category: "Fabric Painting",
-    title: null,
+    title: "Surrealist Love",
     images: [
       "/Fabric painting/fabric-painting-6a.png",
       "/Fabric painting/fabric-painting-6b.png",
@@ -466,7 +466,7 @@ const INITIAL_ARTWORKS = [
   {
     id: 33,
     category: "Fabric Painting",
-    title: null,
+    title: "Tribute in red",
     images: [
       "/Fabric painting/fabric-painting-7a.png",
       "/Fabric painting/fabric-painting-7b.png",
@@ -482,7 +482,7 @@ const INITIAL_ARTWORKS = [
   {
     id: 34,
     category: "Fabric Painting",
-    title: null,
+    title: "Wings of Hamsini",
     images: [
       "/Fabric painting/fabric-painting-8a.png",
       "/Fabric painting/fabric-painting-8b.png",
@@ -515,7 +515,7 @@ const INITIAL_ARTWORKS = [
   {
     id: 36,
     category: "For Sale",
-    title: null,
+    title: "Ananta Bhakti",
     images: [
       "/For sale/for-sale-1a.png",
       "/For sale/for-sale-1b.png",
@@ -532,7 +532,7 @@ const INITIAL_ARTWORKS = [
   {
     id: 37,
     category: "For Sale",
-    title: null,
+    title: "The dot clock",
     images: [
       "/For sale/for-sale-2a.png",
       "/For sale/for-sale-2b.png",
@@ -769,6 +769,22 @@ const INITIAL_ARTWORKS = [
     medium: null,
     description: null,
     imageRatio: "square"
+  },
+  {
+    id: 54,
+    category: "Fabric Painting",
+    title: "Vibrant Kingdom",
+    images: [
+      "/Fabric painting/fabric-painting-9a.png",
+      "/Fabric painting/fabric-painting-9b.png",
+      "/Fabric painting/fabric-painting-9c.png",
+      "/Fabric painting/fabric-painting-9d.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "portrait"
   }
 ];
 
