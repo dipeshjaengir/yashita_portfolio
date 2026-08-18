@@ -423,7 +423,8 @@ const INITIAL_ARTWORKS = [
     title: null,
     images: [
       "/Fabric Painting/fabric-painting-3a.png",
-      "/Fabric Painting/fabric-painting-3b.png"
+      "/Fabric Painting/fabric-painting-3b.png",
+      "/Fabric Painting/fabric-painting-3c.png"
     ],
     size: null,
     price: null,
@@ -433,19 +434,6 @@ const INITIAL_ARTWORKS = [
   },
   {
     id: 31,
-    category: "Fabric Painting",
-    title: null,
-    images: [
-      "/Fabric Painting/fabric-painting-4a.png"
-    ],
-    size: null,
-    price: null,
-    medium: null,
-    description: null,
-    imageRatio: "portrait"
-  },
-  {
-    id: 32,
     category: "Fabric Painting",
     title: null,
     images: [
@@ -461,7 +449,7 @@ const INITIAL_ARTWORKS = [
     imageRatio: "portrait"
   },
   {
-    id: 33,
+    id: 32,
     category: "Fabric Painting",
     title: null,
     images: [
@@ -476,7 +464,7 @@ const INITIAL_ARTWORKS = [
     imageRatio: "portrait"
   },
   {
-    id: 34,
+    id: 33,
     category: "Fabric Painting",
     title: null,
     images: [
@@ -492,7 +480,7 @@ const INITIAL_ARTWORKS = [
     imageRatio: "portrait"
   },
   {
-    id: 35,
+    id: 34,
     category: "Fabric Painting",
     title: null,
     images: [
