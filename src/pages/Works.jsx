@@ -800,6 +800,22 @@ export default function Works({ setCurrentPage }) {
     setActiveImageIndex(0);
   };
 
+  const handleEnquiryClick = () => {
+    if (!activeArtwork) return;
+    const whatsappNumber = "918639772624";
+    const artworkTitle = activeArtwork.title;
+    const artworkCategory = activeArtwork.subcategory
+      ? `${activeArtwork.category} — ${activeArtwork.subcategory}`
+      : activeArtwork.category;
+
+    const text = artworkTitle
+      ? `Hi Yashi, I would like to enquire about your artwork collection: "${artworkTitle}" (${artworkCategory}) on your website.`
+      : `Hi Yashi, I would like to enquire about your "${artworkCategory}" artwork on your website.`;
+
+    const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
+    window.open(url, '_blank', 'noopener,noreferrer');
+  };
+
   const categories = [
     'All',
     'Mural Art',
@@ -1074,10 +1090,7 @@ export default function Works({ setCurrentPage }) {
                   <button 
                     className="btn-primary" 
                     style={{ width: '100%' }}
-                    onClick={() => {
-                      setActiveArtwork(null);
-                      setCurrentPage('contact');
-                    }}
+                    onClick={handleEnquiryClick}
                   >
                     Enquire About This Collection
                   </button>
