@@ -30,11 +30,22 @@ export default function Contact() {
     }
 
     setFormState('submitting');
+
+    const whatsappNumber = "918639772624";
+    const messageText = `Hi Yashi, I would like to submit an inquiry from your website:
+- Name: ${formData.name}
+- Email: ${formData.email}
+- Phone: ${formData.phone || 'N/A'}
+- Inquiry Type: ${formData.inquiryType}
+- Message: ${formData.message}`;
+
+    const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(messageText)}`;
     
-    // Simulate API delay
+    // Simulate slight submission delay then redirect and show success screen
     setTimeout(() => {
       setFormState('success');
-    }, 1200);
+      window.open(url, '_blank', 'noopener,noreferrer');
+    }, 800);
   };
 
   return (
