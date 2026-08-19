@@ -21,23 +21,25 @@ const INITIAL_ARTWORKS = [
     size: "7sqft x 4sqft",
     price: null,
     medium: null,
+    year: "2025",
     description: "A contemporary Lippan-inspired mandala representing seven chakras and the journey from the outer world to inner consciousness.",
     imageRatio: "portrait"
   },
   {
     id: 93,
     category: "Mural Art",
-    title: "Reflections of awakening",
+    title: "Reflection of awakening",
     images: [
       "/Mural Art/reflections-awakening-1a.png",
       "/Mural Art/reflections-awakening-1b.png",
       "/Mural Art/reflections-awakening-1c.png",
       "/Mural Art/reflections-awakening-1d.png"
     ],
-    size: null,
+    size: "7.5sqft x 10.5sqft",
     price: null,
     medium: null,
-    description: null,
+    year: "2026",
+    description: "An intricate Lippan mirror-art work depicting an expansive Tree of Life radiates outward with a figure in meditation and the seven chakras aligned along the torso and a lotus base below.",
     imageRatio: "portrait"
   },
   {
@@ -49,9 +51,10 @@ const INITIAL_ARTWORKS = [
       "/mural-fusion-pichwai-lippan-1.jpg",
       "/mural-fusion-pichwai-lippan-2.jpg"
     ],
-    size: "6sqft x 4sqft",
+    size: "4sqft x 6sqft",
     price: null,
     medium: null,
+    year: "2025",
     description: "A contemporary interpretation of the Tree of Life, blending the devotional richness of Pichwai art with the intricate mirror work of Lippan art.",
     imageRatio: "portrait"
   },
@@ -68,6 +71,7 @@ const INITIAL_ARTWORKS = [
     size: "6sqft x 4sqft",
     price: null,
     medium: null,
+    year: "2025",
     description: "A contemporary mural merging organic botanical elements with bold geometric forms in a harmonious composition.",
     imageRatio: "portrait"
   },
@@ -80,10 +84,11 @@ const INITIAL_ARTWORKS = [
       "/mural-botanical-geometry-1.jpg",
       "/mural-botanical-geometry-2.jpg"
     ],
-    size: null,
+    size: "10sqft x 8.5sqft",
     price: null,
     medium: null,
-    description: null,
+    year: "2024",
+    description: "A contemporary mural blending geometric forms with delicate florals, creating a calm and sophisticated workspace aesthetic.",
     imageRatio: "portrait"
   },
   {
@@ -96,23 +101,25 @@ const INITIAL_ARTWORKS = [
       "/mural-windows-of-wonder-4.jpg",
       "/mural-windows-of-wonder-1.jpg"
     ],
-    size: "5sqft x 4sqft",
+    size: "4sqft x 5sqft",
     price: null,
     medium: null,
+    year: "2024",
     description: "A vibrant triptych mural blending nature, landscapes, and abstract forms into three colorful visual stories.",
     imageRatio: "portrait"
   },
   {
     id: 6,
     category: "Mural Art",
-    title: "Udipi’s Upahar – Wall Mural",
+    title: "Udipi’s Upahar",
     images: [
       "/mural-udipis-upahar-1.jpg"
     ],
-    size: "8sqft x 6sqft",
+    size: "6sqft x 8sqft",
     price: null,
     medium: null,
-    description: "A vibrant mural celebrating the rich culture and traditional charm of South India. Designed to bring a warm, authentic touch to the restaurant’s ambience.",
+    year: "2023",
+    description: "A vibrant mural celebrating the rich culture and traditional charm of South India.\nDesigned to bring a warm, authentic touch to the restaurant’s ambience.",
     imageRatio: "landscape"
   },
   {
