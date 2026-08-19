@@ -25,6 +25,22 @@ const INITIAL_ARTWORKS = [
     imageRatio: "portrait"
   },
   {
+    id: 93,
+    category: "Mural Art",
+    title: "Reflections of awakening",
+    images: [
+      "/Mural Art/reflections-awakening-1a.png",
+      "/Mural Art/reflections-awakening-1b.png",
+      "/Mural Art/reflections-awakening-1c.png",
+      "/Mural Art/reflections-awakening-1d.png"
+    ],
+    size: null,
+    price: null,
+    medium: null,
+    description: null,
+    imageRatio: "portrait"
+  },
+  {
     id: 2,
     category: "Mural Art",
     title: "A Fusion of Pichwai & Lippan",
@@ -100,22 +116,6 @@ const INITIAL_ARTWORKS = [
     imageRatio: "landscape"
   },
   {
-    id: 93,
-    category: "Mural Art",
-    title: "Reflections of awakening",
-    images: [
-      "/Mural Art/reflections-awakening-1a.png",
-      "/Mural Art/reflections-awakening-1b.png",
-      "/Mural Art/reflections-awakening-1c.png",
-      "/Mural Art/reflections-awakening-1d.png"
-    ],
-    size: null,
-    price: null,
-    medium: null,
-    description: null,
-    imageRatio: "portrait"
-  },
-  {
     id: 11,
     category: "Canvas Painting",
     subcategory: "Expression Art",
@@ -123,11 +123,11 @@ const INITIAL_ARTWORKS = [
     images: [
       "/canvas-expression-art-1b.jpg",
       "/canvas-expression-art-1a.jpg"
-      
     ],
-    size: null,
+    size: "12 x 12 inch",
     price: null,
-    medium: null,
+    medium: "Acrylics on canvas",
+    year: "2026",
     description: null,
     imageRatio: "square"
   },
@@ -138,11 +138,12 @@ const INITIAL_ARTWORKS = [
     title: null,
     images: [
       "/canvas-expression-art-2b.jpg",
-      "/canvas-expression-art-2a.jpg"   
+      "/canvas-expression-art-2a.jpg"
     ],
-    size: null,
+    size: "8 x 6 inch",
     price: null,
-    medium: null,
+    medium: "Acrylics on canvas",
+    year: "2026",
     description: null,
     imageRatio: "portrait"
   },
@@ -153,11 +154,12 @@ const INITIAL_ARTWORKS = [
     title: null,
     images: [
       "/faceless-art-2b.jpg",
-      "/faceless-art-2a.jpg",
+      "/faceless-art-2a.jpg"
     ],
-    size: null,
+    size: "8 x 6 inch",
     price: null,
-    medium: null,
+    medium: "Acrylics on canvas",
+    year: "2026",
     description: null,
     imageRatio: "portrait"
   },
@@ -169,11 +171,11 @@ const INITIAL_ARTWORKS = [
     images: [
       "/faceless-art-1b.jpg",
       "/faceless-art-1a.jpg"
-      
     ],
-    size: null,
+    size: "8 x 6 inch",
     price: null,
-    medium: null,
+    medium: "Acrylics on canvas",
+    year: "2026",
     description: null,
     imageRatio: "portrait"
   },
@@ -186,9 +188,10 @@ const INITIAL_ARTWORKS = [
       "/faceless-art-5a.jpg",
       "/faceless-art-5b.jpg"
     ],
-    size: null,
+    size: "8 x 6 inch",
     price: null,
-    medium: null,
+    medium: "Acrylics on canvas",
+    year: "2025",
     description: null,
     imageRatio: "portrait"
   },
@@ -201,9 +204,10 @@ const INITIAL_ARTWORKS = [
       "/faceless-art-4b.jpg",
       "/faceless-art-3a.jpg"
     ],
-    size: null,
+    size: "6 x 8 inch",
     price: null,
-    medium: null,
+    medium: "Acrylics on canvas",
+    year: "2025",
     description: null,
     imageRatio: "portrait"
   },
@@ -214,11 +218,12 @@ const INITIAL_ARTWORKS = [
     title: null,
     images: [
       "/faceless-art-3b.jpg",
-      "/faceless-art-4a.jpg"      
+      "/faceless-art-4a.jpg"
     ],
-    size: null,
+    size: "8 x 6 inch",
     price: null,
-    medium: null,
+    medium: "Acrylics on canvas",
+    year: "2025",
     description: null,
     imageRatio: "portrait"
   },
@@ -231,9 +236,10 @@ const INITIAL_ARTWORKS = [
       "/faceless-art-6b.jpg",
       "/faceless-art-6a.jpg"
     ],
-    size: null,
+    size: "8 x 6 inch",
     price: null,
-    medium: null,
+    medium: "Acrylics on canvas",
+    year: "2025",
     description: null,
     imageRatio: "portrait"
   },
@@ -245,10 +251,10 @@ const INITIAL_ARTWORKS = [
       "/3D art/The Golden Passage/golden-passage-1.jpg",
       "/3D art/The Golden Passage/golden-passage-2.jpg"
     ],
-    size: null,
+    size: "12 x 12 inch",
     price: null,
-    medium: null,
-    description: null,
+    medium: "Acrylic colours, Gold Foil and clay on canvas",
+    description: "A textured 3D art piece featuring embossed lines in clay and radiant gold foil to create a tactile, abstract pathway.",
     imageRatio: "square"
   },
   {
@@ -260,66 +266,66 @@ const INITIAL_ARTWORKS = [
       "/3D art/Treasured Moments/treasured-moments-2.jpg",
       "/3D art/Treasured Moments/treasured-moments-3.jpg"
     ],
-    size: null,
+    size: "8 x 10 inch",
     price: null,
-    medium: null,
-    description: null,
+    medium: "Acrylic coloursand clay on MDF board",
+    description: "A vibrant 3D mixed-media keepsake featuring embossed clay sculptures, colorful whimsical elements, and personal baby footprints.",
     imageRatio: "portrait"
   },
   {
     id: 24,
     category: "Charcoal Art",
-    title: null,
+    title: "Serene Wisdom",
     images: [
-      "/Charcoal Art/charcoal-art-4a.jpg",
-      "/Charcoal Art/charcoal-art-4b.jpg"
+      "/Charcoal Art/charcoal-art-4b.jpg",
+      "/Charcoal Art/charcoal-art-4a.jpg"
     ],
-    size: null,
+    size: "A4 size",
     price: null,
-    medium: null,
-    description: null,
+    medium: "Charcoal on paper",
+    description: "A charcoal sketch on paper capturing the peaceful, meditative profile of Buddha accompanied by a delicate lotus flower.",
     imageRatio: "portrait"
   },
   {
     id: 22,
     category: "Charcoal Art",
-    title: null,
+    title: "Perched in Detail",
     images: [
       "/Charcoal Art/charcoal-art-2a.jpg",
       "/Charcoal Art/charcoal-art-2b.jpg"
     ],
-    size: null,
+    size: "A4 size",
     price: null,
-    medium: null,
-    description: null,
+    medium: "Charcoal on paper",
+    description: "A fine graphite pencil drawing on paper highlighting the intricate patterns and textures of a crested bird perched gracefully among leafy branches.",
     imageRatio: "square"
   },
   {
     id: 23,
     category: "Charcoal Art",
-    title: null,
+    title: "Melancholic Veil",
     images: [
       "/Charcoal Art/charcoal-art-3a.jpg",
       "/Charcoal Art/charcoal-art-3b.jpg"
     ],
-    size: null,
+    size: "A4 size",
     price: null,
-    medium: null,
-    description: null,
+    medium: "Charcoal on paper",
+    description: "A dramatic charcoal drawing on paper portraying an expressive face partially dissolved in dripping, emotional shadows.",
     imageRatio: "square"
   },
   {
     id: 21,
     category: "Charcoal Art",
-    title: null,
+    title: "Light and Bloom",
     images: [
       "/Charcoal Art/charcoal-art-1a.jpg",
       "/Charcoal Art/charcoal-art-1b.jpg"
     ],
-    size: null,
+    size: "A4 size",
     price: null,
-    medium: null,
-    description: null,
+    medium: "Charcoal on paper",
+    description: "A graphite pencil drawing on paper exploring light and nature through detailed studies of a lightbulb and a blooming lotus.",
     imageRatio: "square"
   },
   {
@@ -327,12 +333,13 @@ const INITIAL_ARTWORKS = [
     category: "Customised Painting",
     title: "A Journey Inward",
     images: [
-      "/custom canvas painting/painted-melodies-1.png",
-      "/custom canvas painting/journey-inward-2.png"
+      "/custom canvas painting/journey-inward-2.png",
+      "/custom canvas painting/painted-melodies-1.png"
     ],
-    size: null,
+    size: "8 x 6 inch",
     price: null,
-    medium: null,
+    medium: "Acrylics on canvas",
+    year: "2026",
     description: null,
     imageRatio: "portrait"
   },
@@ -343,11 +350,11 @@ const INITIAL_ARTWORKS = [
     images: [
       "/custom canvas painting/canvas-painting-2.png",
       "/custom canvas painting/canvas-painting-1.png"
-      
     ],
-    size: null,
+    size: "6 x 8 inch",
     price: null,
-    medium: null,
+    medium: "Acrylics on canvas",
+    year: "2025",
     description: null,
     imageRatio: "square"
   },
@@ -362,7 +369,8 @@ const INITIAL_ARTWORKS = [
     ],
     size: null,
     price: null,
-    medium: null,
+    medium: "Acrylics on blazer (fabric paints)",
+    year: "2026",
     description: null,
     imageRatio: "portrait"
   },
@@ -378,7 +386,8 @@ const INITIAL_ARTWORKS = [
     ],
     size: null,
     price: null,
-    medium: null,
+    medium: "Acrylics on georgette saree (fabric paints)",
+    year: "2025",
     description: null,
     imageRatio: "portrait"
   },
@@ -394,7 +403,8 @@ const INITIAL_ARTWORKS = [
     ],
     size: null,
     price: null,
-    medium: null,
+    medium: "Acrylics on blazer (fabric paints)",
+    year: "2025",
     description: null,
     imageRatio: "portrait"
   },
@@ -410,7 +420,8 @@ const INITIAL_ARTWORKS = [
     ],
     size: null,
     price: null,
-    medium: null,
+    medium: "Acrylics on Nylon tshirt (fabric paints)",
+    year: "2026",
     description: null,
     imageRatio: "portrait"
   },
@@ -425,7 +436,8 @@ const INITIAL_ARTWORKS = [
     ],
     size: null,
     price: null,
-    medium: null,
+    medium: "Acrylics on off white denim jacket (fabric paints)",
+    year: "2024",
     description: null,
     imageRatio: "portrait"
   },
@@ -440,7 +452,8 @@ const INITIAL_ARTWORKS = [
     ],
     size: null,
     price: null,
-    medium: null,
+    medium: "Acrylics on denim jacket (fabric paints)",
+    year: "2025",
     description: null,
     imageRatio: "portrait"
   },
@@ -456,7 +469,8 @@ const INITIAL_ARTWORKS = [
     ],
     size: null,
     price: null,
-    medium: null,
+    medium: "Acrylics on cotton tote bag (fabric paints)",
+    year: "2026",
     description: null,
     imageRatio: "portrait"
   },
@@ -472,14 +486,15 @@ const INITIAL_ARTWORKS = [
     ],
     size: null,
     price: null,
-    medium: null,
+    medium: "Acrylics on silk envelope (fabric paints)",
+    year: "2026",
     description: null,
     imageRatio: "portrait"
   },
   {
     id: 35,
     category: "Art That Moves",
-    title: null,
+    title: "Art That Moves",
     images: [
       "/Art that moves/art-that-moves-1a.png",
       "/Art that moves/art-that-moves-1b.png",
@@ -489,8 +504,8 @@ const INITIAL_ARTWORKS = [
     ],
     size: null,
     price: null,
-    medium: null,
-    description: null,
+    medium: "Acrylics on car",
+    description: "Turning a canvas into four wheels. Collaborated with Spinny to transform a car into a movie tribute to Andhra Pradesh for 80 years of independence day.\n\nFrom Lord Venkateswara, Kuchipudi Art, and traditional welcoming couples to authentic South Indian food and Muggu (rangoli) patterns.",
     imageRatio: "landscape"
   },
   {
@@ -504,16 +519,17 @@ const INITIAL_ARTWORKS = [
       "/For sale/for-sale-1d.png",
       "/For sale/for-sale-1e.png"
     ],
-    size: null,
+    size: "20 x 24 inches",
     price: null,
-    medium: null,
-    description: null,
+    medium: "Acrylics on canvas",
+    year: "2026",
+    description: "A serene acrylic painting depicting a sacred Shiva Lingam and Nandi under a glowing full moon, accented with traditional brass bells and warm floral offerings",
     imageRatio: "portrait"
   },
   {
     id: 37,
     category: "For Sale",
-    title: "The dot clock",
+    title: "The Dot Clock",
     images: [
       "/For sale/for-sale-2b.png",
       "/For sale/for-sale-2a.png",
@@ -521,121 +537,124 @@ const INITIAL_ARTWORKS = [
       "/For sale/for-sale-2d.png",
       "/For sale/for-sale-2e.png"
     ],
-    size: null,
+    size: "14 inch",
     price: null,
-    medium: null,
-    description: null,
+    medium: "Acrylics on MDF",
+    year: "2026",
+    description: "A beautiful fusion of handcrafted traditional art and functional home decor featuring intricate dot mandala pattern. It is finished with light cream as base and metallic gold numerals and fully varnished, creating striking statement piece.",
     imageRatio: "portrait"
   },
   {
     id: 94,
     category: "For Sale",
-    title: null,
+    title: "Miniature Painting",
     images: [
       "/For sale/for-sale-3.png"
     ],
-    size: null,
+    size: "Customisable (any)",
     price: null,
-    medium: null,
-    description: null,
+    medium: "Acrylics on canvas",
+    design: "Customisable (any)",
+    description: "A curated set of hand-painted mini canvases featuring diverse themes, from serene nature and abstract patterns to vibrant pop art. Perfect for adding a unique artistic touch to any cozy corner or gallery wall.",
     imageRatio: "square"
   },
   {
     id: 38,
     category: "Knife Art",
-    title: null,
+    title: "Impasto Meadow",
     images: [
       "/Knife Art/knife-art-1a.png",
       "/Knife Art/knife-art-1b.png"
     ],
-    size: null,
+    size: "8 x 6 inch",
     price: null,
-    medium: null,
-    description: null,
+    medium: "Acrylics on stretched canvas",
+    technique: "Knife art",
+    description: "A vibrant impasto knife painting featuring rich, thick textures of a blooming field, lush foliage, and a rustic fence under a deep blue sky.",
     imageRatio: "square"
   },
   {
     id: 39,
     category: "Marble Art",
-    title: null,
+    title: "Marbled Flora Series",
     images: [
       "/Marble Art/marble-art-1a.png",
       "/Marble Art/marble-art-1b.png"
     ],
-    size: null,
+    size: "A5 size",
     price: null,
-    medium: null,
-    description: null,
+    medium: "Ink paints on paper",
+    description: "A series of artistic explorations pairing structured, hand-painted botanical and abstract elements with fluid, marbled paper backgrounds.",
     imageRatio: "square"
   },
   {
     id: 40,
     category: "Marble Art",
-    title: null,
+    title: "Marbled Flora Series",
     images: [
       "/Marble Art/marble-art-2a.png",
       "/Marble Art/marble-art-2b.png"
     ],
-    size: null,
+    size: "A5 size",
     price: null,
-    medium: null,
-    description: null,
+    medium: "Ink paints on paper",
+    description: "A series of artistic explorations pairing structured, hand-painted botanical and abstract elements with fluid, marbled paper backgrounds.",
     imageRatio: "portrait"
   },
   {
     id: 41,
     category: "Marble Art",
-    title: null,
+    title: "Marbled Flora Series",
     images: [
       "/Marble Art/marble-art-3a.png",
       "/Marble Art/marble-art-3b.png"
     ],
-    size: null,
+    size: "A5 size",
     price: null,
-    medium: null,
-    description: null,
+    medium: "Ink paints on paper",
+    description: "A series of artistic explorations pairing structured, hand-painted botanical and abstract elements with fluid, marbled paper backgrounds.",
     imageRatio: "square"
   },
   {
     id: 42,
     category: "Marble Art",
-    title: null,
+    title: "Marbled Flora Series",
     images: [
       "/Marble Art/marble-art-4a.png",
       "/Marble Art/marble-art-4b.png"
     ],
-    size: null,
+    size: "A5 size",
     price: null,
-    medium: null,
-    description: null,
+    medium: "Ink paints on paper",
+    description: "A series of artistic explorations pairing structured, hand-painted botanical and abstract elements with fluid, marbled paper backgrounds.",
     imageRatio: "portrait"
   },
   {
     id: 43,
     category: "Marble Art",
-    title: null,
+    title: "Marbled Flora Series",
     images: [
       "/Marble Art/marble-art-5a.png",
       "/Marble Art/marble-art-5b.png"
     ],
-    size: null,
+    size: "A5 size",
     price: null,
-    medium: null,
-    description: null,
+    medium: "Ink paints on paper",
+    description: "A series of artistic explorations pairing structured, hand-painted botanical and abstract elements with fluid, marbled paper backgrounds.",
     imageRatio: "portrait"
   },
   {
     id: 44,
     category: "Marble Art",
-    title: null,
+    title: "Marbled Flora Series",
     images: [
       "/Marble Art/marble-art-6a.png",
       "/Marble Art/marble-art-6b.png"
     ],
-    size: null,
+    size: "A5 size",
     price: null,
-    medium: null,
-    description: null,
+    medium: "Ink paints on paper",
+    description: "A series of artistic explorations pairing structured, hand-painted botanical and abstract elements with fluid, marbled paper backgrounds.",
     imageRatio: "portrait"
   },
   {
@@ -764,7 +783,6 @@ const INITIAL_ARTWORKS = [
     description: null,
     imageRatio: "square"
   },
-
   {
     id: 55,
     category: "Customised Painting",
@@ -776,7 +794,8 @@ const INITIAL_ARTWORKS = [
     ],
     size: null,
     price: null,
-    medium: null,
+    medium: "Acrylics on wood",
+    year: "2025",
     description: null,
     imageRatio: "portrait"
   },
@@ -1007,183 +1026,183 @@ const INITIAL_ARTWORKS = [
   {
     id: 72,
     category: "Thread Art",
-    title: null,
+    title: "Linear Thread Portrait",
     images: [
       "/Thread Art/thread-art-1a.png",
       "/Thread Art/thread-art-1b.png"
     ],
-    size: null,
+    size: "A4 size",
     price: null,
-    medium: null,
-    description: null,
+    medium: "sewing thread, acrylic paints on paper",
+    description: "A bold abstract composition combining clean geometric colour blocking with intricate coloured thread meticulously arranged on paper with linear patterns and rich textures forming a striking stylized portrait.",
     imageRatio: "square"
   },
   {
     id: 73,
     category: "Watercolour Painting",
-    title: null,
+    title: "Grace in Motion",
     images: [
       "/Water Painting/water-painting-1a.png",
       "/Water Painting/water-painting-1b.png"
     ],
-    size: null,
+    size: "A4 size",
     price: null,
-    medium: null,
-    description: null,
+    medium: "watercolour on paper",
+    description: "A graceful watercolor painting capturing a dancer in a dynamic pose, set against an expressive, multi-colored abstract wash background.",
     imageRatio: "portrait"
   },
   {
     id: 74,
     category: "Watercolour Painting",
-    title: null,
+    title: "Colorful Canine Portrait",
     images: [
       "/Water Painting/water-painting-2a.png",
       "/Water Painting/water-painting-2b.png"
     ],
-    size: null,
+    size: "A4 size",
     price: null,
-    medium: null,
-    description: null,
+    medium: "watercolour on paper",
+    description: "A vibrant watercolor and ink portrait capturing a friendly dog through an expressive splash of rainbow hues and loose line work.",
     imageRatio: "portrait"
   },
   {
     id: 75,
     category: "Watercolour Painting",
-    title: null,
+    title: "Cosmic Flora",
     images: [
       "/Water Painting/water-painting-3a.png",
       "/Water Painting/water-painting-3b.png"
     ],
-    size: null,
+    size: "A4 size",
     price: null,
-    medium: null,
-    description: null,
+    medium: "watercolour on paper",
+    description: "A serene ink illustration on paper featuring an expressive line art portrait of a woman surrounded by delicate blooms against an vibrant atmospheric watercolor cosmos.",
     imageRatio: "portrait"
   },
   {
     id: 76,
     category: "Watercolour Painting",
-    title: null,
+    title: "Cosmic Flora",
     images: [
       "/Water Painting/water-painting-4a.png",
       "/Water Painting/water-painting-4b.png"
     ],
-    size: null,
+    size: "A4 size",
     price: null,
-    medium: null,
-    description: null,
+    medium: "watercolour on paper",
+    description: "A serene ink illustration on paper featuring an expressive line art portrait of a woman surrounded by delicate blooms against an vibrant atmospheric watercolor cosmos.",
     imageRatio: "portrait"
   },
   {
     id: 77,
     category: "Watercolour Painting",
-    title: null,
+    title: "Cosmic Flora",
     images: [
       "/Water Painting/water-painting-5a.png",
       "/Water Painting/water-painting-5b.png"
     ],
-    size: null,
+    size: "A4 size",
     price: null,
-    medium: null,
-    description: null,
+    medium: "watercolour on paper",
+    description: "A serene ink illustration on paper featuring an expressive line art portrait of a woman surrounded by delicate blooms against an vibrant atmospheric watercolor cosmos.",
     imageRatio: "portrait"
   },
   {
     id: 78,
     category: "Watercolour Painting",
-    title: null,
+    title: "Cosmic Flora",
     images: [
       "/Water Painting/water-painting-6a.png",
       "/Water Painting/water-painting-6b.png"
     ],
-    size: null,
+    size: "A4 size",
     price: null,
-    medium: null,
-    description: null,
+    medium: "watercolour on paper",
+    description: "A serene ink illustration on paper featuring an expressive line art portrait of a woman surrounded by delicate blooms against an vibrant atmospheric watercolor cosmos.",
     imageRatio: "portrait"
   },
   {
     id: 79,
     category: "Watercolour Painting",
-    title: null,
+    title: "Cosmic Flora",
     images: [
       "/Water Painting/water-painting-7a.png",
       "/Water Painting/water-painting-7b.png"
     ],
-    size: null,
+    size: "A4 size",
     price: null,
-    medium: null,
-    description: null,
+    medium: "watercolour on paper",
+    description: "A serene ink illustration on paper featuring an expressive line art portrait of a woman surrounded by delicate blooms against an vibrant atmospheric watercolor cosmos.",
     imageRatio: "portrait"
   },
   {
     id: 80,
     category: "Watercolour Painting",
-    title: null,
+    title: "Cosmic Flora",
     images: [
       "/Water Painting/water-painting-8a.png",
       "/Water Painting/water-painting-8b.png"
     ],
-    size: null,
+    size: "A4 size",
     price: null,
-    medium: null,
-    description: null,
+    medium: "watercolour on paper",
+    description: "A serene ink illustration on paper featuring an expressive line art portrait of a woman surrounded by delicate blooms against an vibrant atmospheric watercolor cosmos.",
     imageRatio: "portrait"
   },
   {
     id: 81,
     category: "Watercolour Painting",
-    title: null,
+    title: "Cosmic Brew",
     images: [
       "/Water Painting/water-painting-9a.png",
       "/Water Painting/water-painting-9b.png"
     ],
-    size: null,
+    size: "A5 size",
     price: null,
-    medium: null,
-    description: null,
+    medium: "watercolour on paper",
+    description: "A whimsical watercolor painting on paper depicting a stack of colorful teacups overflowing with a starry, deep-space night sky.",
     imageRatio: "portrait"
   },
   {
     id: 82,
     category: "Watercolour Painting",
-    title: null,
+    title: "Quad-Vignette Series",
     images: [
       "/Water Painting/water-painting-10a.png",
       "/Water Painting/water-painting-10b.png"
     ],
-    size: null,
+    size: "A4 size",
     price: null,
-    medium: null,
-    description: null,
+    medium: "watercolour on paper",
+    description: "A vibrant watercolor painting on paper featuring four distinct atmospheric scenes, exploring different times of day and moods.",
     imageRatio: "portrait"
   },
   {
     id: 83,
     category: "Watercolour Painting",
-    title: null,
+    title: "Moonlit Dreams",
     images: [
       "/Water Painting/water-painting-11a.png",
       "/Water Painting/water-painting-11b.png"
     ],
-    size: null,
+    size: "A4 size",
     price: null,
-    medium: null,
-    description: null,
+    medium: "watercolour on paper",
+    description: "A dreamlike watercolor painting on paper depicting a figure holding balloons atop a cliff against a glowing full moon and starry cosmic sky.",
     imageRatio: "portrait"
   },
   {
     id: 84,
     category: "Watercolour Painting",
-    title: null,
+    title: "Gazing at Infinity",
     images: [
       "/Water Painting/water-painting-12a.png",
       "/Water Painting/water-painting-12b.png"
     ],
-    size: null,
+    size: "A5 size",
     price: null,
-    medium: null,
-    description: null,
+    medium: "watercolour on paper",
+    description: "A mixed-media watercolor painting on paper depicting a person looking through a window into a luminous, starry night sky.",
     imageRatio: "portrait"
   },
   {
@@ -1245,15 +1264,15 @@ const INITIAL_ARTWORKS = [
   {
     id: 89,
     category: "Dot Painting",
-    title: null,
+    title: "Enlightenend Buddha",
     images: [
       "/Dot Painting/dot-painting-1a.png",
       "/Dot Painting/dot-painting-1b.png"
     ],
-    size: null,
+    size: "12 x 12 inch",
     price: null,
-    medium: null,
-    description: null,
+    medium: "Acrylics on paper",
+    description: "A vibrant dot work painting featuring a meditative face of Buddha formed entirely through meticulous multicolored pointillism patterns.",
     imageRatio: "square"
   },
   {
@@ -1580,12 +1599,24 @@ export default function Works({ setCurrentPage }) {
                   <div style={{ height: '1px', backgroundColor: 'var(--color-border)', margin: 'var(--space-sm) 0' }}></div>
                   
                   {/* Factual documentation ready states */}
-                  {(activeArtwork.medium || activeArtwork.size || activeArtwork.price || activeArtwork.year || activeArtwork.location) && (
+                  {(activeArtwork.medium || activeArtwork.size || activeArtwork.price || activeArtwork.year || activeArtwork.location || activeArtwork.technique || activeArtwork.design) && (
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '0.65rem', margin: 'var(--space-md) 0' }}>
+                      {activeArtwork.design && (
+                        <div style={{ fontSize: '0.95rem' }}>
+                          <span style={{ color: 'var(--color-sage-dark)', fontWeight: 600 }}>Design: </span>
+                          <span style={{ color: 'var(--color-charcoal)' }}>{activeArtwork.design}</span>
+                        </div>
+                      )}
                       {activeArtwork.medium && (
                         <div style={{ fontSize: '0.95rem' }}>
                           <span style={{ color: 'var(--color-sage-dark)', fontWeight: 600 }}>Medium: </span>
                           <span style={{ color: 'var(--color-charcoal)' }}>{activeArtwork.medium}</span>
+                        </div>
+                      )}
+                      {activeArtwork.technique && (
+                        <div style={{ fontSize: '0.95rem' }}>
+                          <span style={{ color: 'var(--color-sage-dark)', fontWeight: 600 }}>Technique: </span>
+                          <span style={{ color: 'var(--color-charcoal)' }}>{activeArtwork.technique}</span>
                         </div>
                       )}
                       {activeArtwork.size && (
