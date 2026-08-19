@@ -716,57 +716,57 @@ const INITIAL_ARTWORKS = [
   {
     id: 49,
     category: "Pichwai Art",
-    title: null,
+    title: "Heritage Bag",
     images: [
       "/Pichwai/pichwai-1a.jpg",
       "/Pichwai/pichwai-1b.png"
     ],
-    size: null,
+    size: "A4 Size",
     price: null,
-    medium: null,
-    description: null,
+    medium: "Acrylics on paper",
+    description: "A vibrant painting of a circular handbag featuring traditional motifs, including a majestic peacock and lotus florals on a bright yellow base.",
     imageRatio: "square"
   },
   {
     id: 50,
     category: "Pichwai Art",
-    title: null,
+    title: "Chromatic Harmony",
     images: [
       "/Pichwai/pichwai-2a.jpg",
       "/Pichwai/pichwai-2b.png"
     ],
-    size: null,
+    size: "A4 Size",
     price: null,
-    medium: null,
-    description: null,
+    medium: "Water colours on paper",
+    description: "A mixed-media design on a decorative cushion featuring a traditional stylized deity portrait set against a vibrant, multi-colored watercolor wash.",
     imageRatio: "square"
   },
   {
     id: 52,
     category: "Pichwai Art",
-    title: null,
+    title: "Divine Union",
     images: [
       "/Pichwai/pichwai-4a.jpg",
       "/Pichwai/pichwai-4b.png"
     ],
-    size: null,
+    size: "A4 Size",
     price: null,
-    medium: null,
-    description: null,
+    medium: "Poster colours and ink pen on paper",
+    description: "A traditional circular artwork featuring three stylized white cows emerging beneath a radiant, intricately patterned orange canopy.",
     imageRatio: "square"
   },
   {
     id: 51,
     category: "Pichwai Art",
-    title: null,
+    title: "Botanical Illumination",
     images: [
       "/Pichwai/pichwai-3a.png",
       "/Pichwai/pichwai-3b.png"
     ],
-    size: null,
+    size: "A4 Size",
     price: null,
-    medium: null,
-    description: null,
+    medium: "Acrylics on paper",
+    description: "A hand-painted illustration of an ornate wooden table lamp featuring a vibrant lampshade adorned with palm foliage and colourful lotus florals on the shade.",
     imageRatio: "portrait"
   },
   {
